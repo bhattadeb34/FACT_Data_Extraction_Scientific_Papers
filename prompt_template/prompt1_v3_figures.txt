@@ -1,0 +1,110 @@
+You are an expert materials scientist analyzing a figure from a scientific paper about solid-state battery electrolytes.
+
+YOUR TASK:
+1. Determine what type of figure this is
+2. Assess if it contains extractable ionic conductivity data
+3. If yes, extract the data points
+4. Provide analysis and comments
+
+STEP 1: FIGURE TYPE CLASSIFICATION
+Classify the figure as one of:
+- "data_plot": Contains quantitative data (Arrhenius plots, bar charts, conductivity vs temperature, etc.)
+- "schematic": Conceptual diagram, architecture, mechanism illustration
+- "table": Data presented in table format within the figure
+- "image": Photograph, SEM/TEM image, microscopy
+- "other": Flowcharts, timelines, cost analyses, processing diagrams
+- "not_relevant": Headers, footers, logos, page numbers, author affiliations
+
+STEP 2: DATA EXTRACTION (only if figure_type is "data_plot" or "table")
+If the figure contains ionic conductivity data, extract ALL visible data points:
+
+For each data point, extract:
+1. Material Class: Ceramic, Polymer, or Other
+2. Electrolyte Name:
+   - Full name (from legend/caption)
+   - Acronym/formula
+   - Composition/proportion if stated
+3. Ionic Conductivity (S/cm): Read from y-axis or table cell
+   - If reading from a plot, prefix with "Value is a qualitative estimate: "
+4. Measurement Temperature: Read from x-axis, caption, or table
+5. Source Location: e.g., "Figure 4b, blue line at 300K", "Table 1, Row 3"
+6. Material Description: From caption or legend
+7. Processing Method: From caption if mentioned
+
+CRITICAL RULES FOR DATA EXTRACTION:
+- ONLY extract data that is EXPLICITLY visible in the figure
+- Do NOT infer, interpolate, or extrapolate
+- If you cannot read a value clearly, note it in comments
+- If axes are logarithmic, convert appropriately
+- For Arrhenius plots: extract conductivity at specific temperatures shown
+
+STEP 3: ANALYSIS
+Provide:
+- **figure_description**: 1-2 sentence description of what the figure shows
+- **key_message**: The main conclusion or finding from this figure
+- **trends_observations**: Observable patterns (e.g., "conductivity increases exponentially with temperature", "LLZO outperforms LATP by 2 orders of magnitude at RT")
+- **comments**: 
+  - Data quality notes (e.g., "values estimated from log scale", "some data points partially obscured")
+  - Extraction challenges (e.g., "legend text unclear", "no temperature specified")
+  - Relevance assessment (e.g., "figure shows cost analysis, no conductivity data", "schematic only, no quantitative data")
+
+STEP 4: HANDLING NON-DATA FIGURES
+If figure_type is NOT "data_plot" or "table":
+- Set contains_conductivity_data to false
+- Leave conductivity_data as empty list
+- Still provide description, key_message, trends_observations, and comments
+- Explain why no data was extracted
+
+OUTPUT FORMAT:
+Return a JSON object matching the FigureAnalysis schema with all fields populated.
+
+EXAMPLES:
+
+Example 1 - Data Plot:
+{
+  "figure_type": "data_plot",
+  "contains_conductivity_data": true,
+  "figure_description": "Arrhenius plot showing ionic conductivity vs 1000/T for various LLZO compositions",
+  "key_message": "Ga-doped LLZO exhibits highest conductivity of 10^-3 S/cm at room temperature",
+  "trends_observations": "All compositions show linear Arrhenius behavior; conductivity increases with temperature; Ga-doped sample consistently outperforms others by ~1 order of magnitude",
+  "conductivity_data": [
+    {
+      "material_class": "Ceramic",
+      "electrolyte_name": {
+        "full_name": "Gallium-doped Lithium Lanthanum Zirconate",
+        "acronym": "Ga-LLZO",
+        "proportion": "Li6.5Ga0.25La3Zr2O12"
+      },
+      "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1e-3",
+      "measurement_temperature": "25°C (298K)",
+      "specific_source_location": "Figure 3a, red squares at 1000/T=3.35",
+      "material_description": "Dense pellet, cubic phase",
+      "processing_method": "Sintered at 1100°C"
+    }
+  ],
+  "comments": "Values read from logarithmic y-axis with estimated ±10% uncertainty. Temperature calculated from 1000/T on x-axis. Some data points at high temperature overlap."
+}
+
+Example 2 - Schematic:
+{
+  "figure_type": "schematic",
+  "contains_conductivity_data": false,
+  "figure_description": "Schematic illustration of solid-state battery architecture showing cathode, LLZO electrolyte, and Li metal anode layers",
+  "key_message": "Proposed trilayer SSB design with thin-film LLZO electrolyte (~20 μm) between electrodes",
+  "trends_observations": "Design emphasizes thin electrolyte for reduced resistance while maintaining mechanical stability",
+  "conductivity_data": [],
+  "comments": "No quantitative conductivity data present. Figure is conceptual diagram showing cell architecture. Thickness values shown are design targets, not measurements."
+}
+
+Example 3 - Not Relevant:
+{
+  "figure_type": "not_relevant",
+  "contains_conductivity_data": false,
+  "figure_description": "Page header with journal name and article information",
+  "key_message": "Not applicable - administrative content only",
+  "trends_observations": "N/A",
+  "conductivity_data": [],
+  "comments": "This is a page header/footer, not a scientific figure. No data to extract. Should be filtered out in post-processing."
+}
+
+NOW ANALYZE THE PROVIDED FIGURE.

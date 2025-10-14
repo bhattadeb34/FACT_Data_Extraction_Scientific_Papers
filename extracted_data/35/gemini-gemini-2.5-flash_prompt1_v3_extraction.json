@@ -1,0 +1,1049 @@
+{
+    "raw_md": "# REVIEW ARTICLE\n\nhttps://doi.org/10.1038/s41560-020-00759-5\n\n![](_page_0_Figure_3.jpeg)\n\n# Processing thin but robust electrolytes for solid-state batteries\n\nMoran Balaish<sup>1,3</sup>, Juan Carlos Gonzalez-Rosillo<sup>1,3</sup>, Kun Joong Kim<sup>1</sup>, Yuntong Zhu<sup>1,3</sup>, Zachary D. Hood<sup>1</sup> and Jennifer L. M. Rupp<sup>1,2</sup> \u22a0\n\nThe widespread adoption of high-energy-density solid-state batteries (SSBs) requires cost-effective processing and the integration of solid electrolytes of about the same thickness as the polymer-membrane separators found in conventional lithium-ion batteries. In this Review, we critically discuss the current status of research on SSB processing as well as recent cost calculations, and compare SSB oxide electrolyte material and processing options in terms of performance parameters for thick versus thin ceramics. We identify as critical for future SSB design the need to capture the thermal processing budget and the stability of the phase of interest for oxide solid electrolytes, namely lithium phosphorus oxynitride, sodium superionic conductors, perovskites and garnets, in addition to the classic plots of Arrhenius lithium transport and the electrochemical stability window. Transitioning to SSB oxide electrolyte films with thicknesses close to the range for lithium-ion battery separators could provide ample opportunities for low-temperature ceramic manufacture and potential cost reduction.\n\nnfolding the true potential of lithium-ion batteries (LIBs) in emerging decarbonized applications for a renewable electricity grid in the coming decades demands constant innovation towards a safer, stronger and better battery assembly<sup>1,2</sup>. The current US Department of Energy (DOE) performance and cost targets for advanced high-performance batteries for electric vehicles are  $350 \\, \\text{Wh kg}^{-1}$  (750 Wh l<sup>-1</sup>) and US\\$100 kWh<sup>-1</sup> (at the cell level), respectively<sup>3,4</sup>. Such demanding goals urge us to deviate from the conventional 'rocking chair' (intercalation) principle used in today's LIBs \u2014 given that their energy density is fundamentally limited by the chemistry of the electrodes \u2014 towards Li metal-based batteries, with the possibility of achieving ~35% and ~50% increases in the gravimetric and volumetric energies, respectively<sup>5</sup>. Nonetheless, the use of a Li metal anode necessitates stringent safety precautions to prevent any failure that could potentially set the green-energy infrastructure years back.\n\nOne of the most promising approaches to improve Li-based battery safety is to replace the 'liquid' ion-conducting electrolyte and polymer separator in a conventional LIB with a 'solid' Li-conducting electrolyte ceramic in a solid-state battery (SSB) configuration (Fig. 1a)6. The conductivities of oxide and sulfide ceramic SSB electrolytes, compared with polymer electrolytes, can reach levels competitive with those of 'liquid' electrolytes  $(\\sim 10^{-2}-10^{-3}\\,\\mathrm{S\\,cm^{-1}})^{7,8}$ . Compared with polymer electrolytes with poor oxidative stability and low Li-ion transference number, many ceramic SSB electrolytes have a cation transference number close to unity, obviating the need to waste valuable potential (energy) on anion migration9. Among the two most promising SSB electrolyte chemistries, that is, oxides and sulfides, only oxides can also offer relatively wide electrochemical stability windows and enable pairing of high-voltage cathodes (up to 5 V)10 with Li metal anodes, towards higher-power-density and high-energy-density batteries.\n\nNonetheless, oxides face three main drawbacks challenging cur-rent commercialization. First, oxides are brittle and suffer from unfavourable mechanical properties (for example, high Young's\n\nmodulus, low fracture toughness), which may inhibit intimate contact at interfaces and require additional technological solution (for example, buffer layers, mixing of electrolytes and additives). The mechanical challenges may become even more pronounced once thickness is reduced; thus, further attention should be placed on the chemo-electro-mechanics phenomena at the interfaces. Second, there is limited compatibility of oxide solid electrolytes with current cathode chemistries, linked mainly to the high-temperatures processes involved in the co-sintering step between the components. Lowering processing temperatures is then an essential prerequisite to assure good chemical compatibility. Third, oxides usually have higher densities than other classes of electrolyte (sulfides and polymers), which is detrimental for the overall gravimetric energy density, necessitating the use of a Li metal anode and high-voltage cathodes.\n\nIn this Review, we critically discuss the characteristics, opportunities and challenges associated with the processing of solid-state oxide electrolytes ranging from pellets to films, promoting their future integration as 'thin' ion conductors and 'ceramic electrode separators' in SSBs.\n\n## Prospect on manufacturing costs of electrolytes for Li SSBs\n\nThe introduction of SSB oxide electrolytes would improve the packing density and result in negligible self-discharge and could potentially lead to batteries with longer life expectancy and improved performance of >10<sup>4</sup> cycles. In addition to being electrochemically stable during cell operation, solid electrolytes should be mechanically robust and as thin as possible to maximize the valuable volume remaining for the electrodes in SSB cell designs. To compete with current ~20-\u00b5m-thick polymer separators in typical LIBs, ceramic manufacturing strategies for SSB electrolytes in that size range are needed; however, such techniques remain scarce as the latest reviews on available SSB electrolyte material chemistry draw mostly from bulky pellet ceramics. Assuming a 25-\u00b5m-thick solid electrolyte, a recent estimation suggests that a Li metal SSB pouch cell should offer an energy density of 350 Wh kg<sup>-1</sup>, aligning well with the pre-\n\n<sup>1</sup>Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA. <sup>2</sup>Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, USA. <sup>3</sup>These authors contributed equally: Moran Balaish, Juan Carlos Gonzalez-Rosillo. <sup>\u221e</sup>e-mail: jrupp@mit.edu\n\n![](_page_1_Figure_2.jpeg)\n\n<span id=\"page-1-0\"></span>**Fig. 1 | Cost and design considerations towards a Li metal-based SSB. a**, Typical architecture of a Li metal-based SSB. **b**, Estimated cost projection for an SSB to be competitive with an LIB based on LLZO estimations and material costs. Processing costs are not applicable in 'current status', given that there is no production at the moment. A 20\u2009\u00b5m fully dense LLZO solid electrolyte (SE) has been considered to estimate current materials costs in US\\$\u2009m\u2212<sup>2</sup> . a The estimated solid-electrolyte production costs for SSB is based on the processing costs for a referenced SOFC technology (that is US\\$7.5\u2009m\u2212<sup>2</sup> ) and a 20\u2009\u00b5m theoretically dense LLZO electrolyte with a price of US\\$10\u201350\u2009kg\u2212<sup>1</sup> (or US\\$1\u20135\u2009m\u2212<sup>2</sup> ) assuming mass productio[n14](#page-10-13). b The polymer separator cost does not include the processing of a microlitre amount of liquid electrolyte at about US\\$22\u2009l\u2212<sup>1</sup> ). sint., sintered. **c**, Typical thickness ranges of solid-state electrolytes reported for pellets[43](#page-11-0)[,63](#page-11-1)[,80,](#page-11-2) tape[s110](#page-12-0)[,111](#page-12-1), wet-chemical[50,](#page-11-3)[88](#page-12-2)[,101](#page-12-3) and vacuum-based[71,](#page-11-4)[96](#page-12-4) deposited films. LAGP, Li-Al-Ge-PO4-based SE; NA, not applicable.\n\nviously stated DOE performance goal[11](#page-10-10). Nonetheless, an in-depth technology\u2013feasibility\u2013cost deliberation towards widespread commercialization of SSBs necessitates bringing critical challenges facing solid electrolytes to the forefront, namely their manufacturing and the creation of phase and mechanically stable interfaces with the ceramic cathode and Li anode, which determine the SSB cost, cycling and longevity. The target of approximately US\\$100kWh<sup>\u2212</sup><sup>1</sup> roughly corresponds to US\\$30 kg<sup>\u2212</sup><sup>1</sup> for materials and manufacturing (at the cell level[\\)12](#page-10-11). To reach this goal for SSBs, substantial efforts are needed considering the low cost of LIB-battery-grade liquid electrolytes and separators of ~US\\$12\u201320kg<sup>\u2212</sup><sup>1</sup> relative to the projected cost of US\\$50 kg<sup>\u2212</sup><sup>1</sup> for large-production quantities of a solid electrolyte[5,](#page-10-4)[13](#page-10-12)[,14](#page-10-13).\n\nThe complex task of estimating the SSB production-chain costs (namely, the processing and material costs) has recently been a topic of interest, with the findings suggesting that even raw material prices as low as US\\$10 kg<sup>\u2212</sup><sup>1</sup> would result in economically impracticable oxide-based cells if we continue to rely on conventional high-temperature sintering into tapes[15.](#page-10-14) Recently, a cost guideline of approximately US\\$10\u201312m<sup>\u2212</sup><sup>2</sup> for the cell repeat layers of an SSB was suggested based on the DOE cost target and current LIB cell energy of 0.2 kWhm<sup>\u2212</sup><sup>2</sup> (5mAhcm<sup>\u2212</sup><sup>2</sup> ). Estimating costs of ~US\\$7m<sup>\u2212</sup><sup>2</sup> for the cathode and current collector and an optimistic rough estimation of ~US\\$1m<sup>\u2212</sup><sup>2</sup> for the 20\u00b5m Li metal sheet (based on an ingot cost of US\\$80 kg<sup>\u2212</sup><sup>1</sup> ) leaves less than US\\$4m<sup>\u2212</sup><sup>2</sup> for the solid electrolyte (Fig. [1b\\)](#page-1-0)[5](#page-10-4) . For context, we can draw an analogy to ceramic-electrolyte production in fuel cells: a total production cost of US\\$10m<sup>\u2212</sup><sup>2</sup> (with processing costs of ~US\\$7.5m<sup>\u2212</sup><sup>2</sup> ) was estimated for a 10\u00b5m film of 8mol% Y2O3-stabilized ZrO2 used as an electrolyte layer in a solid oxide fuel cell (SOFC) tape casted and sintered at high temperatures (~1,300\u20131,400 \u00b0C[\\)5](#page-10-4) . On the basis of the processing costs for a referenced SOFC technology and a 20\u00b5m theoretically dense Li7La3Zr2O12 (LLZO) electrolyte with a price of US\\$10\u201350kg<sup>\u2212</sup><sup>1</sup> (US\\$1\u20135m<sup>\u2212</sup><sup>2</sup> ) assuming mass production, a production cost of US\\$8.5\u201312.5m<sup>\u2212</sup><sup>2</sup> was estimated (Fig. [1b\\)](#page-1-0). Although SSB oxide electrolytes are typically sintered at lower temperatures (\u2212\u0394200 \u00b0C) than electrolytes for SOFCs, meeting the desired processing costs of <US\\$4m<sup>\u2212</sup><sup>2</sup> requires the establishment of inexpensive, large-scale fabrication techniques with reduced processing temperature and duration, especially considering that other parameters, including but not limited to, inert gas housing or dry rooms, required for the processing of moisture-sensitive components and scrap (excess material) rates may increase the manufacturing costs of oxide-based SSBs even further.\n\nCurrent cost projections assume similar ceramic processing routes for the SSB electrolyte (and cathode) components as those used for other electrochemical ceramic cell products (SOFCs and multilayer capacitors), providing reasonable first estimates. However, it is important to address the disparity in the production volumes: several 10,000 of cells per year for electrochemical cell products such as SOFCs versus approximately 19.7 million per year targeted for SSBs (in line with a mass-production scenario with an annual output of 6GWh)[15.](#page-10-14) Here, it is reasonable to assume that the overall ceramic production lines may adapt to the needs, lowering SSB costs. In addition, most cost projections assume that SSB electrolytes require some form of high-temperature sintering. However, SSBs operate ideally close to room temperature, leaving ample room for thermal processing of the electrolyte and co-synthesis of the cathode over the entire range from 100 \u00b0C to often 1,000 \u00b0C. This situation notably differs from that of SOFCs, which conventionally operate in energy conversion at 2/3 to 5/6 of their initial processing temperature, thereby requiring co-sintering of tapes above 1,000 \u00b0C, leaving only little room to optimize ceramic processing and limiting the possible form factors. Thus, opportunities to explore ceramic processing for SSB oxide components over the entire range of temperatures have not even been fully explored.\n\nThe critical question when reflecting on these cost goals is: how far has today's ceramic processing of SSB electrolytes come in terms of chemistry, form factors and thermal budget? The majority of today's solid-state Li-electrolyte conductors for SSBs reported in the literature, including Li garnets (for example, Li7La3Zr2O12 (LLZO)), perovskites (for example, Li*x*La*y*TiO3 (LLTO)) and sodium superionic conductor (NASICON)-type structures (for example, Li(Al,Ti)2(PO4)3 (LATP)), are processed as ceramic pellets with thickness ranging from 300 to 1,000\u00b5m (Fig. [1c\\)](#page-1-0) using conventional ceramic processing routes followed by densification at rather high sintering temperature (~1,000 \u00b0C). Recently, ultrafast (up to 10 s) high-temperature (up to 3,000 \u00b0C) sintering processes were strategically proposed and demonstrated success in mitigating the omnipresent problem of volatile element loss during conventional ceramic sintering[7](#page-10-6)[,16,](#page-10-15) suggesting the potential for future automated high-throughput materials screening and synthesis for high production volume. Nonetheless, a transition from solid electrolytes processed as pellets, mainly serving as model systems, to cost-effective film manufacturing targeting a thickness of <20\u00b5m brings to the forefront wet chemistry and other methods.\n\nTo gain insight into today's capability for SSB ceramic processing beyond pellets, we analysed the possible thickness range for SSB electrolytes for known Li-oxide solid-state chemistry and ceramic processing routes (Fig. [1c\\)](#page-1-0) and compared the results over the entire range from sinter-densified pellets and tapes to low-temperature-solidified films. Figure [1c](#page-1-0) reveals the opportunities to process thick or thin films for the desired SSB electrolyte size range of <20\u03bcm for most known Li chemistries of LLTO, LATP and LLZO, although these materials may require more attention (Table [1](#page-3-0)). In addition, avoiding classic sintering and densification by employing wet-chemical direct deposition techniques (for example, spray pyrolysis, dip coating and inkjet printing) followed by an annealing step at intermediate temperatures may pave new paths for SSB electrolyte fabrication besides thin-tape processing with classic sintering at higher temperatures. Typically, dip coating runs at lower speeds (~1\u201310mms<sup>\u2212</sup><sup>1</sup> ) than tape casting and spray setups (~20mmin<sup>\u2212</sup><sup>1</sup> ), both covering large areas through inexpensive initial investment. Vacuum-based techniques are another mid-range cost solution offering high control over the phase and targeting small thicknesses <1.5 \u00b5m overall at the expense of a larger initial investment and relatively low (~1\u201310nms<sup>\u2212</sup><sup>1</sup> ) deposition rate. At present, these are the only methodologies used for the commercialization of SSBs based on lithium phosphorus oxynitride (LiPON) (for example, sputtering) and the only ones enabling controlled deposition of metallic Li films by thermal evaporatio[n17](#page-10-16). Nonetheless, comprehensive cost analysis is needed to realize the true scalability potential of vacuum-based thin-film oxide solid electrolytes in addition to gaining fundamental understanding on the chemistry and large-scale processing feasibility (for example, deposition area, deposition rates, roll-to-roll speed and so on).\n\nFor any SSB, good mechanical bonding and low-area specific resistance of the cathode/electrolyte interfaces are required to ensure fast cycling, and co-sintering of the brittle oxide solid electrolytes and cathode composite at high temperatures is often required if processing via pellets or tapes. However, for most solid cathode/electrolyte material tandems, the best co-sintering strategies to maintain the phase stability and ensure high mechanical bonding require a narrow thermal processing window. The selection of the ceramic processing route for an SSB electrolyte also steers the design opportunities for the cathode itself. So far, three principal cathode/electrolyte SSB designs have been proposed, which differ in their effective active cathode material loading (~1\u201312mg cm<sup>\u2212</sup><sup>2</sup> )[18](#page-10-17) and thermal processing budget. In addition, this cathode loading should be enhanced to achieve competitive capacity values. In the first and most commonly adopted design, co-sintering of the composite cathode/electrolyte assembly occurs at a high temperature (for example, ~1,050 \u00b0C for LLZO). This temperature can be lowered to ~700 \u00b0C if Li3BO3 compounds are added as sintering agents. However, when using a sintering agent, the capacity of the composite and the charge-transfer kinetics are compromised by the presence of residual borate phases (up to a 35wt%[\\)19,](#page-10-18)[20,](#page-10-19) leading to 100 times lower conductivity than that for LLZ[O21](#page-10-20). The second design introduces a porous electrolyte layer sintered at similar high temperatures (~1,100 \u00b0C for LLZO and LLTO), serving as a scaffold for the wet-chemical infiltration of the cathode active material, with subsequent annealing at much lower temperatures (~700 \u00b0C for LiCoO2 (LCO)/LLZO and LiMn2O4/ LLTO) (Fig. [2a](#page-4-0)[\\)22,](#page-10-21)[23](#page-10-22). Analysis of the literature highlights potential obstacles along the path to commercialization for high-performance cathode composites prepared using a co-sintering-based approach that stem from their poor chemical compatibility\u2014we analyse current processable co-sinter electrolyte/cathode tandems in Fig. [2b.](#page-4-0) For instance, insulating decomposition reaction products between LLZO and an LCO cathode were reported above 700 \u00b0C (ref. [24](#page-10-23)). High-voltage spinel cathode candidates (Li2NiMn3O8, Li2FeMn3O8 and LiCoMnO4) start to react with LATP and LLZO even at temperatures as low as 500 \u00b0C, leaving no room for co-sintering to gain sufficient mechanical strength[25.](#page-10-24) LiFePO4 (LFP) cathodes are difficult if not impossible to stabilize with LLZO, as phase decomposition already occurs for processing above 300 \u00b0C (ref. [23\\)](#page-10-22). Moving away from high-temperature co-sintering approaches, one may suggest a third design option termed 'low-temperature electrolyte design' that consists of low-temperature solid-electrolyte film deposition on a self-standing cathode composite substrate that also serves as a mechanical support for the thin solid-electrolyte layer (Fig. [2b](#page-4-0)). This design strategy has the potential to substantially reduce interfacial reaction compared with the co-sintering approach and can be extended to other high-capacity chemistries.\n\n## **Thick versus thin ceramic SSB oxide electrolytes**\n\nThe most-studied Li-ion-conducting ceramics reaching competitive conductivities 10<sup>\u2212</sup><sup>7</sup> \u201310<sup>\u2212</sup><sup>3</sup> S cm<sup>\u2212</sup><sup>1</sup> at room temperature are based on oxynitride glasses (LiPON) and NASICON-, perovskite- and garnet-type structures (Fig. [3a](#page-4-1)). Substantial effort is required to transform a Li-ion-conducting ceramic from a classic bulky pellet to a thin film of hundreds of nanometres in size: on average, more than ten years of additional development time is needed to understand the chemistry, deposition and characteristics of a ceramic film when starting from its pellet counterpart (Fig. [3b](#page-4-1)). The stellar exception is LiPON, for which the thin-film processing route was established before amorphous LiPON pellets. Opportunities in ceramic\n\n<span id=\"page-3-0\"></span>\n\n| Thin-film deposition           | Example<br>methods                                                      | Advantages                                                                                                                                                                                                                                                                                                      | Disadvantages                                                                                                                                                                                                                                                                                          | Achievable<br>film thickness | Strategy of<br>lithiation                                                                                                                                                                                                                                      | Materials<br>been<br>deposited                               |\n|--------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|\n| Wet-chemical<br>methods        | \u2022 Sol-gel<br>\u2022 Spray<br>pyrolysis<br>\u2022 Dip coating<br>\u2022 Spin<br>coating | \u2022 Easy to adjust lithiation<br>degrees of the film<br>\u2022 Ability to scale up for<br>large-scale production<br>\u2022 No vacuum chamber<br>needed and low cost<br>\u2022 Low temperature to form<br>desired phases<br>\u2022 Single- or multistep<br>decomposition possible:<br>form oxide backbone at<br>once or in multisteps  | \u2022 Difficult to control film<br>roughness and thickness<br>\u2022 Complicated chemistry<br>and multiple parameters<br>affect film deposition<br>\u2022 Drying process needs to<br>be carefully controlled to<br>prevent film rupture<br>\u2022 Time consuming<br>to develop two- or<br>multication synthesis<br>routes | \u2022 Up to 10\u2009\u03bcm                | \u2022 Overlithiate<br>precursor<br>solution                                                                                                                                                                                                                        | \u2022 $Li_7La_3Zr_2O_{12}$<br>\u2022 NASICON<br>\u2022 $Li_xLa_{1-x}TiO_3$ |\n| Vacuum-based<br>PVD<br>methods | \u2022 Sputtering<br>\u2022 PLD                                                   | \u2022 Ability to deposit<br>out-of-equilibrium phases<br>\u2022 High control of film<br>thickness and surface<br>roughness<br>\u2022 Wide range of pressure and<br>temperature available for<br>film growth<br>\u2022 Relatively easy to deposit<br>for two- or multication<br>oxide films (compared with<br>wet-chemical methods) | \u2022 Vacuum chamber<br>required and high<br>operational cost<br>\u2022 Usually less conformal<br>surface coating<br>\u2022 Difficult to prevent<br>lithium loss during<br>deposition                                                                                                                                | \u2022 Up to a few<br>micrometres | \u2022 Overlithiate the<br>target pellet with<br>excess lithium<br>(PLD, sputtering)<br>\u2022 Co-deposition<br>of two targets<br>(sputtering)<br>\u2022 Deposit with<br>second target like<br>Li $_2$ O or Li $_3$ N to<br>construct internal<br>lithiation sources<br>(PLD) | \u2022 LiPON<br>\u2022 $Li_7La_3Zr_2O_{12}$<br>\u2022 $Li_xLa_{1-x}TiO_3$   |\n| CVD                            | \u2022 ALD                                                                   | \u2022 Low kinetic energy of<br>deposited particles: reduced<br>surface and film degradation<br>during growth<br>\u2022 Versatility of deposition<br>chemistry<br>\u2022 Excellent conformal coating<br>\u2022 Ability to deposit on<br>structure with high<br>three-dimensional aspect<br>ratio<br>\u2022 Low deposition temperature    | \u2022 Slow growth rate<br>\u2022 High dependence of<br>processing window on<br>precursor volatility<br>\u2022 Difficult for multication<br>deposition<br>\u2022 Challenging to control<br>atomic concentration                                                                                                            | \u2022 Up to a few<br>micrometres | \u2022 Control vapour<br>flow of the<br>chemical reaction                                                                                                                                                                                                           | \u2022 $Li_7La_3Zr_2O_{12}$<br>\u2022 LiPON                            |\n\nprocessing to define the chemistry and attain a deeper understanding of the relation between the structure, phase and Li-ion transport for these films will play a role in determining their integration as 'thin' electrolytes of future SSBs (Fig. [3c\u2013e](#page-4-1)).\n\n**LiPON.** LiPON, with the general chemical formula Li*x*PO*y*N*z*, is one of the earliest developed Li-based thin-film solid electrolytes and enabled the successful commercialization of solid-state microbatteries[26.](#page-10-25) Whereas bulk-pellet-type oxynitride phosphate glasses are fabricated by melting LiPO3 with subsequent annealing in a nitrogen atmosphere[27](#page-10-26)[,28,](#page-10-27) amorphous LiPON (a-LiPON) thin films with one-order-of-magnitude higher ionic conductivity (~10<sup>\u2212</sup><sup>6</sup> S cm<sup>\u2212</sup><sup>1</sup> at room temperature) have been successfully fabricated mainly using radio frequency (RF) magnetron sputterin[g29\u2013](#page-10-28)[32](#page-11-5) with Li3PO4 targets under a nitrogen or ammonia atmosphere at room temperature (Figs. [3c](#page-4-1) and [4a\\)](#page-6-0). Normally, ~1-\u00b5m-thick films are deposited and serve as the solid electrolyte; however, because of the inherent limitations of physical deposition, to achieve sufficient N content in the deposited film, an N-enriched sputtering target is needed[33](#page-11-6)[,34.](#page-11-7) LiPON fabricated by pulsed layer deposition (PLD) also requires N-enriched PLD targets and atmosphere control to achieve high N content in the film. In general, PLD of LiPON is challenging because of the poor surface adsorption of N2 gas and the difficulty in transferring N and Li from the target to films[35\u2013](#page-11-8)[37.](#page-11-9)\n\nIts acceptable ionic conductivity and apparent wide electrochemical window (Fig. [3d\\)](#page-4-1) have favoured its use as a thin-film electrolyte for microbattery applications in the realm of SSBs, allowing for a sufficiently short Li-ion transport distance and low internal resistances. According to first-principles thermodynamic calculations, LiPON has a narrow electrochemical window (0.68\u20132.63V versus Li+/Li)[38.](#page-11-10) However, a wider electrochemical window of 0\u20135.5V versus Li<sup>+</sup>/Li has been observed in practic[e29](#page-10-28), mainly because of the sluggish kinetics of the decomposition products and blockage of electron conduction at the LiPON/electrode (including Li metal) interphase (that is, a thin electronically insulating but stable interphase). LiPON currently has an unmatched long-term cyclability of over 10,000 cycles when operating with a pure metallic Li anode and high-voltage LiNi0.5Mn1.5O4 cathode for microbatteries, with remarkably low degradation in cycling performance (<10%) without any sign of Li-dendrite formatio[n10.](#page-10-9) Another advantage of LiPON film in general over other solid-state Li electrolytes is its considerably lower processing temperature window of 25\u2013250 \u00b0C (Fig. [3b](#page-4-1)), which enhances its chemical compatibility with other oxides and is preferred from a mass-manufacturing viewpoint.\n\n![](_page_4_Figure_2.jpeg)\n\n<span id=\"page-4-0\"></span>**Fig. 2 | SSB architectures and practical processing temperature window of different composite cathode/electrolyte assemblies. a**, Co-sintere[d18\u2013](#page-10-17)[21,](#page-10-20) interface-engineere[d23](#page-10-22) and proposed low-temperature processing without co-sintering of half-cell architectures for lower-temperature processed SSBs. Employing solution synthesis for infiltration or film deposition potentially reduces the processing temperature (*T*P) of the solid electrolyte and cathode composite. **b**, Processing temperature windows of common oxide electrolytes Li7La3Zr2O12 (LLZO[\\)80,](#page-11-2) Li*x*La*y*TiO3 (LLTO[\\)63](#page-11-1) and Li(Al,Ti)2(PO4)3 (LATP[\\)43;](#page-11-0) composite cathodes LiCoO2 (LCO)[24,](#page-10-23) LiFePO4 (LFP[\\)24](#page-10-23) and LiMn2O4 (LMO[\\)22](#page-10-21)[,24;](#page-10-23) and high-voltage spinel cathodes Li2NiMn3O8 (LNMO[\\)25](#page-10-24), Li2FeMn3O8 (LFMO[\\)25](#page-10-24) and LiCoMnO4 (LCMO)[25.](#page-10-24)\n\n**NASICONs.** The general formula NaM2(PO4)3, where M=Ge, Ti, Zr, represents ionic conductors with the NASICON-type structure, which were discovered in 1976[39,](#page-11-11)[40](#page-11-12). About a decade later, the first Li-ion-conducting NASICON-type solid electrolyte, LiZr2(PO4)3, was reported[41.](#page-11-13) By replacing Zr4+ with Ti4+ and Al3+, the ionic conductivity is substantially increased as the conduction channels become larger and therefore more suitable for Li-ion migratio[n42.](#page-11-14) For example, LATP can exhibit a total conductivity of 7\u00d710<sup>\u2212</sup><sup>4</sup> Scm<sup>\u2212</sup><sup>1</sup> at room temperatur[e42.](#page-11-14) Sintered polycrystalline ceramics or glass-ceramic NASICON pellets have mostly been prepared by conventional solid-state or solution-based routes. The highest total conductivity by far is 1\u00d710<sup>\u2212</sup><sup>3</sup> Scm<sup>\u2212</sup><sup>1</sup> at room temperature for an LATP pellet prepared by a sol\u2013gel route and field-assisted sintering (Figs. [3c](#page-4-1) and [4b](#page-6-0)[\\)43.](#page-11-0) Although the bulk ionic conductivity, structural stability and oxidation potential of LATP electrolyte is quite high[38](#page-11-10), efforts towards battery integration have rarely been reported because of the reduction of Ti[12](#page-10-11)[,44](#page-11-15) against low-potential anodes (Li metal, graphite). The introduction of a protective layer, for example Al2O3, at the interface between LATP and a low-potential anode has been suggested to avoid its reduction and resultant electronic leakag[e45](#page-11-16)[\u201347](#page-11-17). The fabrication and optimization of thin-film LATP has been less frequently reported than that of other oxides (Fig. [4a\u2013d](#page-6-0)). The maximum reported conductivity of thin-film LATP remains one order of magnitude less than that of its bulk pellet form, which could be attributed to the difficulty of glass-ceramic phase control in thin films.\n\nThin-film LATP has been fabricated by sol\u2013gel-driven spin coatin[g48](#page-11-18), aerosol deposition[48](#page-11-18)\u2013[50](#page-11-3) and RF magnetron sputterin[g51,](#page-11-19)[52](#page-11-20), with two to three orders of magnitude reduction in the Li-ion conductivity compared with that of polycrystalline LATP pellets (Figs. [3c](#page-4-1) and [4b](#page-6-0))[53.](#page-11-21) Polycrystalline LATP thin films deposited by aerosol deposition have ionic conductivities ranging from 1.1\u00d710<sup>\u2212</sup><sup>6</sup> to 2.7\u00d710<sup>\u2212</sup><sup>6</sup> S cm<sup>\u2212</sup><sup>1</sup> under ambient conditions, with the greatest advantage being the production of dense ceramic coatings directly from an initial polycrystalline powder without the need for a high-temperature step on a substrate[54](#page-11-22). However, the porosity, presence of amorphous residual phases and generally low crystallinity can collectively result in a decrease in the Li-ion conductivity of LATP-based thin films deposited by aerosol deposition. The highest conductivity of 2.46\u00d710<sup>\u2212</sup><sup>5</sup> S cm<sup>\u2212</sup><sup>1</sup> was measured for purely amorphous LATP films deposited by RF magnetron sputtering[53](#page-11-21) and was attributed to the denser and more uniform film microstructure after deposition compared with that of thus far reported films deposited by aerosol deposition (Fig. [4b\\)](#page-6-0). Nonetheless, the limited reduction potential (2.17V versus Li/Li<sup>+</sup>) of LATP films makes their direct integration as an electrolyte with a Li metal anode challenging (Fig. [3d](#page-4-1)[\\)38,](#page-11-10)[55](#page-11-23).\n\n**Perovskites.** Perovskite-type LLTO is another class of materials that has been intensively studied as solid-state electrolytes in both polycrystalline pellet and thin-film form. Polycrystalline LLTO pellets\n\n<span id=\"page-4-1\"></span>**Fig. 3 | Properties of diverse oxide solid electrolytes. a**, Structures, local bonding units and network for convenient Li-ion migration paths of oxide-based Li-ion conductors, including amorphous LiPON, NASICON-type LATP, perovskite-type LLTO and garnet-type LLZO. Na and Nd are apical nitrogen and doubly coordinated nitrogen, respectively. 4f, 2c, 2d, 48/96h and 24d are the atoms Wyckoff positions. **b**, The year LATP pelle[t42](#page-11-14), LiPON film[32,](#page-11-5) LLTO pelle[t58](#page-11-24), LiPON pelle[t28,](#page-10-27) amorphous LLTO fil[m68](#page-11-25), LLZO pelle[t81,](#page-11-26) amorphous LATP film[53](#page-11-21), cubic LATP film[48,](#page-11-18) cubic LLTO fil[m76](#page-11-27), amorphous LLZ[O86](#page-12-5) and cubic LLZO films[96](#page-12-4) were processed and the associated Li-ion conductivities. On average, more than ten years of additional development time is needed from the discovery of materials in their pellet form to thin films. *\u03c3*tot, total conductivity. **c**, Li-ion conductivities of Li-oxide-based solid-state electrolytes in pellet and thin-film form compared with that of the state-of-the-art liquid electrolyte EC:PC:LiPF6 (ref. [114\\)](#page-12-6). The data include the highest reported values of pellet-type and thin-film LLZO[80](#page-11-2)[,99](#page-12-7), LLTO[63,](#page-11-1)[68](#page-11-25), LAT[P43](#page-11-0)[,53](#page-11-21) and LiPON[28,](#page-10-27)[30](#page-10-29). EC:PC, Ethylene carbonate\u2014propylene carbonate. **d**, Theoretical electrochemical stability windows (V) based on first-principles thermodynamic calculations obtained from ref. [115](#page-12-8) are shown. **e**, Processing temperatures (\u00b0C) for reported pellets[28](#page-10-27)[,43,](#page-11-0)[63,](#page-11-1)[80](#page-11-2) and thin film[s30](#page-10-29)[,53](#page-11-21)[,68](#page-11-25)[,96](#page-12-4)[,99](#page-12-7) are also shown. Classification as an amorphous or crystalline thin film (continuous line) or pellet/tape (dashed line) for each material class is indicated by a- and c-, respectively. Panels **a**, **c** and **d** reproduced with permission from ref. [114,](#page-12-6) Springer Nature Ltd.\n\nare typically prepared by solid-state synthesis or sol-gel processing. As the Li concentration x in  $\\text{Li}_{3x}\\text{La}_{(2/3)-x}\\text{TiO}_3$  increases, the bulk (grain) Li-ion conductivity can vary from  $\\sim 10^{-3}\\,\\text{S\\,cm}^{-1}$  for\n\nx=0.1 (Li<sub>0.34</sub>La<sub>0.56</sub>TiO<sub>3</sub>) to ~10<sup>-4</sup>Scm<sup>-1</sup> with a further increase in the Li content due to local distortions of the lattice and an increase in the migration energy barrier, which slows down the diffusion\n\n![](_page_5_Figure_4.jpeg)\n\n![](_page_6_Figure_2.jpeg)\n\n<span id=\"page-6-0\"></span>**Fig. 4 | Ionic conductivity of oxide solid electrolytes for different processing routes.** a-d, LiPON thin films (a), NASICON-type LATP thin films (b), perovskite-type LLTO thin films (c) and garnet-type LLZO thin films (d) compared with their pellet conductivity (grey dashed line). a- and c- indicate amorphous and crystalline, respectively. *T*, is the deposition temperature and *T* is the annealing temperature, epi, epitaxial.\n\nand ion conduction  $^{56,58}$ . However, the high grain-boundary resistance has been a distinct drawback thus far, leading to a total ionic conductivity of  $\\sim 10^{-5}\\,\\mathrm{S\\,cm^{-1}}$  (refs.  $^{59-62}$ ). The origin of the high grain-boundary resistance is mostly attributed to: (1) the presence of an ion-blocking secondary phase such as  $\\mathrm{Li}_2\\mathrm{CO}_3$  at the grain boundary and (2) possible local structure deformations of the Ti\u2013O polyhedral leading to depletion of La and Li within the grain boundary  $^{63-65}$ . Evidence for the latter is that the highest total ionic conductivity of  $4.8 \\times 10^{-4}\\,\\mathrm{S\\,cm^{-1}}$  was reported for LLTO ceramic pellets with excess Li at the grain boundary (Fig.  $3\\,\\mathrm{c}$ ) $^{63}$ .\n\nLLTO thin films have been prepared using various deposition techniques including e-beam evaporation66, PLD67-71, RF magnetron sputtering<sup>72,73</sup>, atomic layer deposition (ALD)<sup>74</sup> and sol-gel-based spin-coating methods<sup>75,76</sup> (Fig. 4c). The highest conductivity of LLTO thin films thus far,  $8.7 \\times 10^{-4} \\, \\mathrm{S \\, cm^{-1}}$ , was achieved for grain-boundary-free a-LLTO films prepared by PLD (Fig. 4c)<sup>68</sup>. In addition, total ionic conductivities of 10<sup>-4</sup>\u201310<sup>-6</sup> S cm<sup>-1</sup> have been reported for films prepared by e-beam evaporation<sup>66</sup>, RF sputtering<sup>72</sup>, sol-gel coating<sup>75</sup> and PLD (Fig. 4c)<sup>68</sup>. Epitaxial growth is another way to avoid contribution of the resistive grain boundaries in the films but requires single-crystal substrates, which is thus far impractical from a manufacturing viewpoint<sup>67</sup>. For sol-gel-coated polycrystalline LLTO films, the grain-boundary resistance sharply decreases above 1,150 \u00b0C because of the decrease of the grain-boundary concentration vertical to the substrate. A total Li-ion conductivity of 4.42 \u00d7 10<sup>-5</sup> S cm<sup>-1</sup> can be achieved with post-annealing at 1,100 \u00b0C (Fig. 4c). Similar to NASICON-type LATP electrolyte films, the application of LLTO as a thin-film electrolyte with a metallic Li anode could be challenging without the introduction of an artificial\n\ninterfacial layer<sup>66,77</sup> because of the reduction of Ti at low potential (Fig. 3d).\n\nGarnets. Among oxide-based Li-ion conductors, Li garnets have received attention for the past decade as a promising class of solid-electrolyte materials with a wide experimentally reported electrochemical window (~0-6 V), attributed to a kinetically limited surface passivation layer, and high Li-ion conductivity compared with those of other state-of-the-art solid electrolytes (Fig. 3c). Garnet-type materials have a general structure of A<sub>3</sub>B<sub>2</sub>(XO<sub>4</sub>)<sub>3</sub>, where A = La and X = Zr, Nb, Ta and B = Al, Ga, Ge, Fe, and were first probed for their Li-ion conductivity78 in 2005, with a conductivity of  $10^{-6} \\,\\mathrm{S\\,cm^{-1}}$  achieved for  $\\mathrm{Li}_5\\mathrm{La}_3\\mathrm{X}_2\\mathrm{O}_{12}$  with  $\\mathrm{X}=\\mathrm{Nb}$  or  $\\mathrm{Ta}^{27}$ . Shortly after, cubic-phase LLZO was discovered with a higher room-temperature Li-ion conductivity (~10<sup>-3</sup> S cm<sup>-1</sup>) than that of its tetragonal-phase polymorph present at lower sintering temperatures 79,80. Unlike LLTO 81,82, LLZO exhibits a low grain-boundary resistance possibly because of the increased bandgap and different characteristics of the space-charge profiles83, which is favourable for an electrolyte for high-performance SSBs.\n\nThe synthesis and especially the stabilization of the cubic and fast-conducting LLZO phase has long posed a challenge for its thin-film form. Thin-film LLZO has been prepared using a wide variety of vacuum-based techniques, including RF sputtering<sup>84</sup>, PLD<sup>85,86</sup> and wet-chemical synthesis by metalorganic chemical vapour deposition (CVD)<sup>87</sup>, sol\u2013gel processing<sup>88</sup> and ALD<sup>89</sup>. An unusual wide spread in Li-ion conductivity over the range of 10<sup>-8</sup> to  $10^{-5} \\, \\mathrm{S \\, cm^{-1}}$  has been reported (Fig. 4d)<sup>87,88,90\u201395</sup>. To overcome this challenge, novel strategies to control the Li stoichiometry\n\nof vacuum-deposited films such as co-deposition[84](#page-11-44)[,96](#page-12-4) and post lithiation[85](#page-11-45) have been explored[97.](#page-12-13) Thus far, the highest conductivities reported for LLZO films are in the range of 10<sup>\u2212</sup><sup>5</sup> \u201310<sup>\u2212</sup><sup>4</sup> S cm<sup>\u2212</sup><sup>1</sup> deposited by vacuum-based techniques using a novel approach that uses two ceramic pellet targets in a so-called multilayer deposition with post-annealing step (Fig. [4d\\)](#page-6-0)[96](#page-12-4),[98,](#page-12-14)[99](#page-12-7). The development of solution chemistry suitable for the stoichiometric composition and the desired microstructure appears to be challenging[100](#page-12-15). Developing solution chemistry and processing routes takes a long time, especially for structures such as LLZO that are composed of three or more cations and are condensed over their metal salts to oxides. In addition, drying cracks and densification issues are often observed in wet-chemistry films, which require optimization. So far, the highest reported Li-ion conductivity for wet-chemically deposited cubic LLZO films at room temperature is 2.4\u00d710<sup>\u2212</sup><sup>6</sup> S cm<sup>\u2212</sup><sup>1</sup> (Fig. [4d](#page-6-0)[\\)101,](#page-12-3) which is one-order-of-magnitude lower than that achieved by multilayer deposition via PLD (using two ceramic pellet targets). However, it is promising that the Li content in the films is relatively easy to tune by simply dissolving additional Li salts into the precursor solution[s102,](#page-12-16)[103,](#page-12-17) which opens up the possibility of large-scale and low-cost manufacturing for thin SSB Li-garnet electrolytes.\n\nSimilar to LiPON and LLTO, which can be processed as both crystalline and amorphous films and, in some cases, pellets, Li garnets can also be processed as amorphous films. In 2018, it was discovered that amorphous Li garnet (a-LLZO) films can be prepared via PLD at lower temperature (as low as 300 \u00b0C) than that used for cubic-phase LLZO films. The transport characteristics (for example, Li-ion conductivity and ion-transport activation energy) of these amorphous films vary depending on the processing temperature. Unsurprisingly, given the very recent developments in controlling Li stoichiometries for LLZO films, the fabrication of amorphous phases has been less frequently explored, and the Li-ion conductivity of their near-order amorphous structure is currently under investigatio[n86](#page-12-5).\n\n### **A guide to tame Li stoichiometry and high temperatures**\n\nA critical issue for SSBs is the integration of solid-state Li electrolytes while maintaining their phase and desired fast transport properties. It is evident from Fig. [3b](#page-4-1) that there are ample opportunities to integrate solid electrolytes even as films for a wide set of Li conductors; however, the thermal processing window of the phase and deposition selection will determine their properties and, ultimately, the integration of a given Li conductor into any commercial cell design. Unlike millimetre-sized pellets or >40-\u03bcm-thick tapes for SSB electrolytes, which require sintering at approximately two-thirds of the melting temperature and high pressure for densification, Li-ceramic film processing allows access to the small but wide range of several hundred nanometres to 20\u03bcm without the need for classic sintering (Fig. [1c](#page-1-0)). Achieving the ideal thickness of the solid electrolyte, that is, close to or even smaller than that of a classic polymer separator[13,](#page-10-12) is challenging or may be deemed as simply unrealistic for classic sintering and densification of powders into pellets and poses challenges for tape processing. Conversely, thin-film processing of Li oxides allows for direct densification from a gas, liquid or solid state even at one-fifth to one-third of the melting temperature with reduction of the thickness by up to three orders of magnitude for both nanocrystalline and amorphous phases for the majority of solid-state Li conductors. In addition, thin-film processing also provides more degrees of freedom to stabilize attractive new amorphous phases such as for LATP or LLTO beyond the established ones for LiPON because of the low-temperature 'sinterless' manufacturing, which may be of interest as potential Li-dendrite mitigation strategies for grain-boundary-free SSB electrolyte designs. To make cautious choices in future SSB design, we revisit and sort through current ceramic processing options, targeting 'thin' solid electrolyte processing opportunities and future perspectives; address critical issues, such as lithium loss and phase maintenance; and comment on upscaling and mass-manufacturing potential per the chemical synthesis route.\n\nVacuum-based film processing techniques, such as physical vapour deposition (PVD) and CVD, enable straightforward assembly of dense multication films processed as solid-state thin-film electrolytes and electrodes for SSBs (<~1.5 \u00b5m). In PVD techniques, two methods are commonly used to deposit Li-based thin films: PLD and sputtering. These techniques rely on vapour formation and particle ejection from a ceramic target at very low pressures, which later diffuses, nucleates, grows and condenses onto the substrate (Fig. [5a\\)](#page-8-0); this high-energy process often results in highly oriented film microstructures, usually with columnar grains or amorphous structures. These high-energy processes often enable stabilization of out-of-equilibrium phases, allowing the formation of desired material phases that would otherwise be thermodynamically unfavourable. Another advantage of these methods is that they rely on high control of the thickness and surface roughness, yielding high-density films, which is beneficial for device integration, for which film quality and phase purity outweigh processing cost.\n\nIn the case of Li-based oxides, Li is easily lost during deposition (Fig. [5a](#page-8-0)), often resulting in off-stoichiometric films[86.](#page-12-5) To compensate for the Li loss during the deposition process, co-deposition of two targets for sputtered films (Fig. [5c\\)](#page-8-0) and of overlithiated ceramic targets for PLD films (Fig. [5b](#page-8-0)) are the typical strategies used. However, stabilization of most crystalline solid-state electrolyte materials (including LLZO and LLTO) and electrode materials (including spinel and layered materials) in their highly lithiated phases is difficult for PLD films only using overlithiated ceramic pellets as targets[104.](#page-12-18) Recently, ceramic processing employing an internal Li source during deposition was introduced with the use of a second target of Li3N and Li garnet and post-annealing (Fig. [5d](#page-8-0)) to successfully overcome Li loss during depositio[n96.](#page-12-4) Importantly, Li3N was selected because its bandgap is close to that of the PLD laser, leading to fast deposition transfer without much Li loss. Similar to these two PVD techniques, CVD uses a vapour source to induce a chemical reaction or decomposition of the gas species in the vapour phase to deposit thin films[105,](#page-12-19)[106.](#page-12-20) The chemical process in the CVD reactor can be thermally, plasmonically or photonically activated. The advantages of CVD are that the kinetic energy of the deposited particles is generally lower than that in other vacuum-based techniques such as sputtering or PLD, reducing surface and film degradation during growth and increasing the versatility of the different chemistries available to explore. ALD is a specific type of CVD that has emerged as a powerful technique for the growth of thin films with exceptional conformal coating that can also be applied for three-dimensional high-aspect-ratio structure[s107.](#page-12-21) Compared with both PVD and CVD, vacuum-based techniques (PLD, sputtering) are more mature and continue gaining momentum for conformal film deposition on larger substrates with high-aspect-ratio structures. Nonetheless, given the large investment required to scale-up films deposited via PLD, such films have thus far been mainly used as model systems to study electrode/electrolyte interface reactions for batteries but have not found real entry to commercial SSB designs.\n\nWet-chemical synthesized films are attractive in terms of manufacturing cost reduction and scale up of SSB electrolytes, obviating the need for an expensive vacuum chamber or high-energy source. Moreover, solid-electrolyte films synthesized via wet-chemical techniques may be easily processed to the desired electrolyte thickness ranging from the submicrometre level to several micrometres. Conventionally, wet-chemical ceramic processing of films has been performed using sol\u2013gel, spray pyrolysis, dip coating or spin-coating routes (Fig. [5e\\)](#page-8-0). The challenges for most wet-chemical film deposition techniques are twofold. First, most Li-oxide-based conductors of interest are composed of at least two to four cations,\n\n![](_page_8_Figure_2.jpeg)\n\n<span id=\"page-8-0\"></span>**Fig. 5 | Overview of the different lithiation strategies available. a**, Lithium loss mechanism during thin-film annealing at high temperatures. **b**, Overlithiation of deposition target for vacuum-based films. **c**, Co-deposition with a Li-source target for vacuum-based films. **d**, Construction of internal lithiation sources with secondary target for vacuum-based films. **e**, Overlithiation of precursor solution for wet-chemical films.\n\nand specific phases are required to ensure fast Li motion through the structures. For example, for doped Li garnets, such as  $\\rm Li_{6.25}Al_{0.25}L$   $\\rm a_3Zr_2O_{12}$ , coordination of the multiple and often differing metal salt decomposition points and adaption of the organic chemistry (that is, the decomposition points and chain length towards the deposition temperature) are needed for chemical decomposition, nucleation and condensation reactions <sup>108</sup>. The second aspect in the art of wet-chemical film manufacturing is to gain control of drying of the Li-ceramic forming film without crack formation during deposition and post-annealing. This aspect can also technically involve a single or multistep temperature- or pH-controlled chemical reaction(s) to transfer either all of the salts to the forming oxide at once or to use\n\ndifferent subreactions to control the drying during densification in a stepwise manner.\n\nFor Li-oxide ceramic films, there is a large variety of possible Li salts with thermal decomposition temperatures ranging between 100 \u00b0C and 550 \u00b0C, which is a much wider range than that for other heavier metal cations (for example, La, Ti, Zr) conventionally used in the synthesis of Li electrolyte or electrode materials. One of the richest arguments for further exploration of wet-chemical ceramic synthesis and manufacturing for Li-based films is that in most compositions, the lithiation degree of the film can be very easily adjusted during synthesis (Fig. 5e). By adding more Li salt to the original precursor for as long as the component remains soluble\n\n<span id=\"page-9-0\"></span>\n\n| Materials class                                          | Local bonding<br>units                                                                                              | Primary<br>deposition<br>method | General considerations for<br>processing                                                                                                             | Potentials for mass manufacturing                                                                                                                                                                                                                                                                                | Application as electrolyte in<br>SSBs                                                                      |\n|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|\n| LiPON                                                    | One bonding<br>unit:<br>P(O,N) $4$<br>tetrahedra                                                                    | Sputtering                      | \u2022 Maintaining Li and N<br>stoichiometry during<br>deposition                                                                                         | \u2022 Sputtering is a scalable and<br>commercially attractive technique<br>\u2022 Room-temperature deposition<br>available, which increases<br>compatibility of processing with<br>other material components                                                                                                              | Pellet: NA                                                                                                 |\n|                                                          |                                                                                                                     |                                 |                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                  | Film: Li/LiPON/LiNi $0.5$ Mn $1.5$ O $4$<br>10,000 cycles/120<br>mAh g $\u22121$<br>at<br>0.1<br>C (ref. $10$ ) |\n| NASICON<br>(for example,<br>LATP)                        | Two bonding<br>units:<br>TiO $6$ octahedra;<br>AlO $6$ octahedra                                                    | Sputtering                      | \u2022 Limited precursor choice in<br>wet-chemical processing<br>of polyanionic oxide based<br>on PO $4$                                                  | \u2022 Scalable vacuum-based<br>deposition is preferred over<br>wet-chemical methods, due<br>to limited choice of phosphate<br>precursors                                                                                                                                                                             | Pellet: Pt/LCO/NASICON/<br>LiPON/Li<br>50 cycles/50<br>Ah<br>g $\u22121$<br>at 0.01<br>C<br>(ref. $55$ )        |\n|                                                          |                                                                                                                     |                                 |                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                  | Film: NA                                                                                                   |\n| Perovskite<br>(for example,<br>Li $x$ La $1\u2212x$ TiO $3$ ) | One bonding<br>unit:<br>TiO $6$ octahedra                                                                           | PLD                             | \u2022 Maintain stoichiometry<br>and mitigating Li loss<br>during deposition                                                                              | \u2022 Scalable vacuum-based<br>deposition is preferred over<br>wet-chemical methods, due to<br>high grain boundary resistance in<br>crystalline film                                                                                                                                                                 | Pellet: NA                                                                                                 |\n|                                                          |                                                                                                                     |                                 |                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                  | Film: half-cell<br>LiNi $0.5$ Mn $1.5$ O $4$ /a-LLTO<br>50 cycles 98% capacity<br>retention $7$            |\n| Garnet<br>(for example,<br>Li $7$ La $3$ Zr $2$ O $12$ ) | Four bonding<br>units:<br>LaO $8$<br>dodecahedra;<br>ZrO $6$ octahedra;<br>LiO $6$ octahedra;<br>LiO $4$ tetrahedra | PLD                             | \u2022 High configurational<br>entropy due to four or more<br>cations in structure<br>\u2022 Li stoichiometry can<br>greatly affect phases and<br>conductivity | \u2022 Low-cost wet-chemical methods<br>are preferred over vacuum-based<br>deposition<br>\u2022 Four or more cations: difficult<br>to develop processing route to<br>achieve desired phases<br>\u2022 Processing temperature is desired<br>to be further reduced to improve<br>processing compatibility with other<br>materials | Pellet: Li/LLZO/LCO<br>100 cycles/94<br>mAh<br>g $\u22121$<br>at<br>0.05<br>C (ref. $20$ )                      |\n|                                                          |                                                                                                                     |                                 |                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                  | Film: NA                                                                                                   |\n\n(and therefore able to react), the Li concentration of the forming oxide can be easily steered to allow for low-temperature manufacturing below 750 \u00b0C (ref. [8](#page-10-7) ). Moreover, the excess Li in the deposited films not only helps to stabilize the desired fast-conducting phases during post-heat treatments but may also act as a grain-boundary agent that can promote densification and improve film density[109.](#page-12-23) The development of an inorganic synthesis protocol to achieve the desired phases and stoichiometry in dense thin-film form is required for each material class; thus, the advancement of chemical synthesis routes for ceramic solid-state films of Li oxides is generally complex and time intensive. However, if further improved, this route would be cost effective and well suited for mass manufacturing to meet society's energy storage needs. In addition, the lithiation degree and distribution of Li within the grains and grain boundaries could provide a powerful tool for altering the grain-boundary chemistry, including the transference numbers, bandgap and structure properties, yielding high stabilities towards Li-dendrite formation and longer cycle life of SSBs.\n\nThus far, except for the commercialization of LiPON in a solid-state microbattery, the promising film Li-ion conductors, including LATP, LLTO and LLZO, have yet to be properly integrated in SSBs. Considering the reduced thermal processing window for cubic LLZO compared with that for LLTO (Fig. [3e](#page-4-1)) and the flexible tunability of oxide-based LLZO with wet-chemistry routes relative to that of polyanionic oxides such as LiPON and LATP, fewer compatibility issues are expected for device-level integration of LLZO as a solid electrolyte in SSBs. Furthermore, a-LLZO and a-LLTO films are also promising alternatives not only because of their grain-boundary-free nature but also because of their lower processing temperatures relative to those for their crystalline counterparts. The high ionic conductivity reported for a-LLTO prepared by PLD[68](#page-11-25) indicates its great potential as an electrolyte for SSBs. Nonetheless, further research is needed to understand the amorphous nature of LLZO, LLTO and LATP and to optimize the ionic and electronic conductivities versus their local bonding units (Table [2\\)](#page-9-0). In general, a concrete understanding of (1) the conduction mechanism in amorphous thin-film Li-ion conductors and (2) the stability of amorphous Li conductor/electrode (metal, oxide and so on depending on the application) interfaces have been less explored than for polycrystalline Li conductors. The progress reviewed here presents an opportunity for science and industry to translate many of the current processing techniques used to prepare desirable crystalline and amorphous fast Li<sup>+</sup>-conducting phases for SSB electrolytes into low-temperature processes, targeting cost-effective methods without the classic needs of sintering for sizes of 1\u201320\u03bcm.\n\n### **A thin but solid battery perspective**\n\nThere has been remarkable progress in the development of SSBs and electrolytes over the past two decades, leading to new phase and material discoveries. So far, most reviews in the battery field have only considered sintering approaches for the synthesis of solid Li electrolytes, leading the majority of researchers to focus on pellet processing with a few notable exceptions, where tape processing and other methods were examined[110](#page-12-0)[\u2013113.](#page-12-24) As a result, up to 75% of the production costs assumed in current cost projections for SSBs may be greatly overestimated as future solid-electrolyte manufacture and bonding to cathodes may not necessarily require high-temperature sintering and their classic ceramic tool park. In this Review, we first assembled evidence of the ample opportunities to manufacture ceramic films in the desired size range of 1\u201320\u03bcm to replace polymer separators in LIBs, with the benefit of high electrochemical stability and lithium compatibility for several SSB electrolyte materials.\n\nSecond, electrolyte films based on LATP, LLTO or LLZO do not necessarily require classic sintering or starting from synthesized powders and densification, as wet-chemical scalable routes could also be developed. The initial processing-related numbers for many cost calculations for SSBs are based on the assumption that similar tools (such as those for SOFCs) but at slightly lower temperature will be used for the assembly of SSBs. Although this assumption is a reasonable starting point, it does not account for all the alternative ceramic processing technologies or phase stabilization strategies that do not require sintering. If further progress in film SSB processing can be achieved, especially examination of wet-chemical sinterless, cold and rapid sintering techniques using the methods identified here[7](#page-10-6) , this information may affect the cost targets at scale and lead to new assembly strategies in SSB design.\n\nThird, low-temperature ceramic processing will enable the stabilization of a new generation of (grain-boundary free) amorphous solid Li<sup>+</sup> electrolyte ceramics beyond LiPON, including LATP, LLTO and LLZO. These materials are more readily accessible in thin- or thick-film form without the need for high-temperature sintering, enabling their use as full solid electrolytes or buffer layers for operation for high cycle numbers with pure lithium. In SSB designs, their use would allow for a greater range for engineering the transference number (known to alter Li shorts along grain boundaries) and operation over a wide electrochemical stability window, which may gain even more importance when considering that SSB electrolytes can and should become thinner. Nevertheless, the understanding of their local bonding unit arrangements (for example, role of network formers and modifiers) and Li transfer as well as implementation in SSBs is still in an early stage.\n\nFourth, transferring ceramic processing for a Li material class from high-temperature sintering to lower processing conditions and times requires alternative strategies to manufacture Li stoichiometries with a certain precision to ensure phase stability and high performance of the SSB ceramic. We provide a blueprint for sinterless processing of SSB materials, demonstrating how to control the intrinsic lithiation degree after ceramic processing, which we judge to be a key parameter to realize the ongoing transition of most SSB electrolyte materials from thick to thin.\n\nFinally, we encourage the SSB community to employ thermal processing plots to reflect on the thermal budget available to stabilize thin or thick films and establish fusion strategies towards the cathode and stability towards lithium. Despite being far from commercialization, the need to address the possibilities for low-temperature and small-form-factor ceramic processing for electrolyte design may lead to shifts in manufacture and motivate researchers and engineers to join the voyage and design the next generation of batteries for electric vehicles and portable electronics for our society's future.\n\nReceived: 20 July 2020; Accepted: 2 December 2020; Published online: 1 February 2021\n\n## **References**\n\n- <span id=\"page-10-0\"></span>1. Trahey, L. et al. Energy storage emerging: a perspective from the Joint Center for Energy Storage Research. *Proc. Natl Acad. Sci. USA* **117**, 12550\u201312557 (2020).\n  - **Tis work draws from a historical perspective the current challenges in energy storage in a broader context**.\n- <span id=\"page-10-1\"></span>2. Olivetti, E. A., Ceder, G., Gaustad, G. G. & Fu, X. Lithium-ion battery supply chain considerations: analysis of potential bottlenecks in critical metals. *Joule* **1**, 229\u2013243 (2017).\n- <span id=\"page-10-2\"></span>3. *USABC Goals for Advanced High-Performance Batteries for Electric Vehicle (EV) Applications* (United States Council for Automotive Reserach LLC, 2019); [https://www.uscar.org/guest/article\\\\_view.php?articles\\\\_id](https://www.uscar.org/guest/article_view.php?articles_id=85)=85\n- <span id=\"page-10-3\"></span>4. US Department of Energy Batteries *energy.gov* [https://www.energy.gov/eere/](https://www.energy.gov/eere/vehicles/batteries) [vehicles/batteries](https://www.energy.gov/eere/vehicles/batteries) (accessed 9 July 2020).\n\n- <span id=\"page-10-4\"></span>5. Albertus, P., Babinec, S., Litzelman, S. & Newman, A. Status and challenges in enabling the lithium metal electrode for high-energy and low-cost rechargeable batteries. *Nat. Energy* **3**, 16\u201321 (2018).\n  - **Tis work highlights the importance of lithium metal anodes for enabling high-energy batteries at low cost from a mass-manufacturing perspective**.\n- <span id=\"page-10-5\"></span>6. Kim, K. J., Balaish, M., Wadaguchi, M., Kong, L. & Rupp, J. L. M. Solidstate Li-metal batteries: challenges and horizons of oxide and sulfde solid electrolytes and their interfaces. *Adv. Energy Mater.* **11**, 2002689 (2021).\n- <span id=\"page-10-6\"></span>7. Wang, C. et al. A general method to synthesize and sinter bulk ceramics in seconds. *Science* **526**, 521\u2013526 (2020).\n  - **Tis work provides insights of a novel methodology to sinter bulk ceramics at ultrahigh temperature during very short times succesfully**.\n- <span id=\"page-10-7\"></span>8. Kamaya, N. et al. A lithium superionic conductor. *Nat. Mater.* **10**, 682\u2013686 (2011).\n- <span id=\"page-10-8\"></span>9. Zhao, Q., Stalin, S., Zhao, C. Z. & Archer, L. A. Designing solid-state electrolytes for safe, energy-dense batteries. *Nat. Rev. Mater.* **5**, 229\u2013252 (2020).\n  - **Tis work brings the advantages and challenges linked to several solid-state electrolyte chemistries to the foreforent, highlithing current bottlenecks in the feld**.\n- <span id=\"page-10-9\"></span>10. Li, J., Ma, C., Chi, M., Liang, C. & Dudney, N. J. Solid electrolyte: the key for high-voltage lithium batteries. *Adv. Energy Mater.* **5**, 1401408 (2015).\n- <span id=\"page-10-10\"></span>11. Wu, X. et al. Electrolyte for lithium protection: from liquid to solid. *Green. Energy Environ.* **4**, 360\u2013374 (2019).\n- <span id=\"page-10-11\"></span>12. Janek, J. & Zeier, W. G. A solid future for battery development. *Nat. Energy* **1**, 16141 (2016).\n- <span id=\"page-10-12\"></span>13. Schmuch, R., Wagner, R., H\u00f6rpel, G., Placke, T. & Winter, M. Performance and cost of materials for lithium-based rechargeable automotive batteries. *Nat. Energy* **3**, 267\u2013278 (2018).\n- <span id=\"page-10-13\"></span>14. Schnell, J. et al. Prospects of production technologies and manufacturing costs of oxide-based all-solid-state lithium batteries. *Energy Environ. Sci.* **12**, 1818\u20131833 (2019).\n- <span id=\"page-10-14\"></span>15. Schnell, J., Kn\u00f6rzer, H., Imbsweiler, A. J. & Reinhart, G. Solid versus liquid\u2014a bottom-up calculation model to analyze the manufacturing cost of future high-energy batteries. *Energy Technol.* **8**, 1901237 (2020). **Tis work provides in-depth cost estimations of various SSB cell designs through a detailed model of the full production chain, providing hints about the need to decrease production cost to achieve competitive SSB products**.\n- <span id=\"page-10-15\"></span>16. Ping, W. et al. Printable, high-performance solid-state electrolyte flms. *Sci. Adv.* **6**, eabc8641 (2020).\n- <span id=\"page-10-16\"></span>17. Alexander, G. V. et al. Electrodes-electrolyte interfacial engineering for realizing room temperature lithium metal battery based on garnet structured solid fast Li+ conductors. *J. Power Sources* **396**, 764\u2013773 (2018).\n- <span id=\"page-10-17\"></span>18. Tsai, C. L. et al. A garnet structure-based all-solid-state Li battery without interface modifcation: resolving incompatibility issues on positive electrodes. *Sustain. Energy Fuels* **3**, 280\u2013291 (2019).\n- <span id=\"page-10-18\"></span>19. Ohta, S. et al. Co-sinterable lithium garnet-type oxide electrolyte with cathode for all-solid-state lithium ion battery. *J. Power Sources* **265**, 40\u201344 (2014).\n- <span id=\"page-10-19\"></span>20. Han, F. et al. Interphase engineering enabled all-ceramic lithium battery. *Joule* **2**, 497\u2013508 (2018).\n- <span id=\"page-10-20\"></span>21. Ohta, S. et al. All-solid-state lithium ion battery using garnet-type oxide and Li3BO3 solid electrolytes fabricated by screen-printing. *J. Power Sources* **238**, 53\u201356 (2013).\n- <span id=\"page-10-21\"></span>22. Kotobuki, M. et al. A novel structure of ceramics electrolyte for future lithium battery. *J. Power Sources* **196**, 9815\u20139819 (2011).\n- <span id=\"page-10-22\"></span>23. Kim, K. J. & Rupp, J. L. M. All ceramic cathode composite design and manufacturing towards low interfacial resistance for garnet-based solid-state batteries. *Energy Environ. Sci.* **13**, 4930\u20134945 (2020).\n- <span id=\"page-10-23\"></span>24. Ren, Y., Liu, T., Shen, Y., Lin, Y. & Nan, C.-W. Chemical compatibility between garnet-like solid state electrolyte Li6.75La3Zr1.75Ta0.25O12 and major commercial lithium battery cathode materials. *J. Mater.* **2**, 256\u2013264 (2016).\n- <span id=\"page-10-24\"></span>25. Miara, L. et al. About the compatibility between high voltage spinel cathode materials and solid oxide electrolytes as a function of temperature. *ACS Appl. Mater. Interfaces* **8**, 26842\u201326850 (2016).\n- <span id=\"page-10-25\"></span>26. Bates, J. B. et al. Fabrication and characterization of amorphous lithium electrolyte thin flms and rechargeable thin-flm batteries. *J. Power Sources* **43**, 103\u2013110 (1993).\n- <span id=\"page-10-26\"></span>27. Wang, C. et al. Garnet-type solid-state electrolytes: materials, interfaces, and batteries. *Chem. Rev.* **120**, 4257\u20134300 (2020).\n- <span id=\"page-10-27\"></span>28. Wang, B., Kwak, B. S., Sales, B. C. & Bates, J. B. Ionic conductivities and structure of lithium phosphorus oxynitride glasses. *J. Non Cryst. Solids* **183**, 297\u2013306 (1995).\n- <span id=\"page-10-28\"></span>29. Yu, X., Bates, J. B., Jellison, G. E. E. & Hart, F. X. A stable thin-flm lithium electrolyte: lithium phosphorus oxynitride. *J. Electrochem. Soc.* **144**, 524 (1997).\n- <span id=\"page-10-29\"></span>30. Su, Y. et al. LiPON thin flms with high nitrogen content for application in lithium batteries and electrochromic devices prepared by RF magnetron sputtering. *Solid State Ion.* **282**, 63\u201369 (2015).\n\n- 31. Hamon, Y. et al. Infuence of sputtering conditions on ionic conductivity of LiPON thin flms. *Solid State Ion.* **177**, 257\u2013261 (2006).\n- <span id=\"page-11-5\"></span>32. Bates, J. B. et al. Electrical-properties of amorphous lithium electrolyte thin-flms. *Solid State Ion.* **53**, 647\u2013654 (1992).\n- <span id=\"page-11-6\"></span>33. Ruzmetov, D. et al. Electrolyte stability determines scaling limits for solid-state 3D Li ion batteries. *Nano Lett.* **12**, 505\u2013511 (2012).\n- <span id=\"page-11-7\"></span>34. Kozen, A. C., Pearse, A. J., Lin, C. F., Noked, M. & Rublof, G. W. Atomic layer deposition of the solid electrolyte LiPON. *Chem. Mater.* **27**, 5324\u20135331 (2015).\n- <span id=\"page-11-8\"></span>35. West, W. C. et al. Reduction of charge-transfer resistance at the solid electrolyte\u2013electrode interface by pulsed laser deposition of flms from a crystalline Li2PO2N source. *J. Power Sources* **312**, 116\u2013122 (2016).\n- 36. Kuwata, N., Iwagami, N., Tanji, Y., Matsuda, Y. & Kawamura, J. Characterization of thin-flm lithium batteries with stable thin-flm Li3PO4 solid electrolytes fabricated by ArF excimer laser deposition. *J. Electrochem. Soc.* **157**, A521 (2010).\n- <span id=\"page-11-9\"></span>37. Kuwata, N., Iwagami, N., Matsuda, Y., Tanji, Y. & Kawamura, J. Tin flm batteries with Li3PO4 solid electrolyte fabricated by pulsed laser deposition. *ECS Trans.* **16**, 53\u201360 (2009).\n- <span id=\"page-11-10\"></span>38. Zhu, Y., He, X. & Mo, Y. First principles study on electrochemical and chemical stability of solid electrolyte-electrode interfaces in all-solid-state Li-ion batteries. *J. Mater. Chem. A* **4**, 3253\u20133266 (2016).\n- <span id=\"page-11-11\"></span>39. Goodenough, J. B., Hong, H. Y. P. & Kafalas, J. A. Fast Na<sup>+</sup>-ion transport in skeleton structures. *Mater. Res. Bull.* **11**, 203\u2013220 (1976).\n- <span id=\"page-11-12\"></span>40. Hong, H. Y. P. Crystal-structures and crystal-chemistry in system Na1+*<sup>x</sup>*Zr2Si *<sup>x</sup>*P3\u2212*<sup>x</sup>*O12. *Mater. Res. Bull.* **11**, 173\u2013182 (1976).\n- <span id=\"page-11-13\"></span>41. Petit, D., Colomban, P., Collin, G. & Boilot, J. P. Fast ion-transport in LiZr2(PO4)3\u2014structure and conductivity. *Mater. Res. Bull.* **21**, 365\u2013371 (1986).\n- <span id=\"page-11-14\"></span>42. Aono, H., Sugimoto, E., Sadaoka, Y., Imanaka, N. & Adachi, G. Ionic conductivity of solid electrolytes based on lithium titanium phosphate. *J. Electrochem. Soc.* **137**, 1023\u20131027 (1990).\n- <span id=\"page-11-0\"></span>43. Bucharsky, E. C., Schell, K. G., Hintennach, A. & Hofmann, M. J. Preparation and characterization of sol\u2013gel derived high lithium ion conductive NZP-type ceramics Li1+*<sup>x</sup>*Al*x*Ti2\u2212*<sup>x</sup>*(PO4)3. *Solid State Ion.* **274**, 77\u201382 (2015).\n- <span id=\"page-11-15\"></span>44. Knauth, P. Inorganic solid Li ion conductors: an overview. *Solid State Ion.* **180**, 911\u2013916 (2009).\n- <span id=\"page-11-16\"></span>45. West, W. C., Whitacre, J. F. & Lim, J. R. Chemical stability enhancement of lithium conducting solid electrolyte plates using sputtered LiPON thin flms. *J. Power Sources* **126**, 134\u2013138 (2004).\n- 46. Jadhav, H. S., Kalubarme, R. S., Jadhav, A. H. & Seo, J. G. Highly stable bilayer of LiPON and B2O3 added Li1.5Al0.5Ge1.5(PO4) solid electrolytes for non-aqueous rechargeable Li-O2 batteries. *Electrochim. Acta* **199**, 126\u2013132 (2016).\n- <span id=\"page-11-17\"></span>47. Xiao, W., Wang, J., Fan, L., Zhang, J. & Li, X. Recent advances in Li1+*<sup>x</sup>*AlxTi2 <sup>\u2212</sup>*<sup>x</sup>*(PO4)3 solid-state electrolyte for safe lithium batteries. *Energy Storage Mater.* **19**, 379\u2013400 (2019).\n- <span id=\"page-11-18\"></span>48. Wu, X. M. M., Chen, S., Mai, F. R. R., Zhao, J. H. H. & He, Z. Q. Q. Infuence of the annealing technique on the properties of Li ion-conductive Li1.3Al0.3Ti1.7(PO4)3 flms. *Ionics* **19**, 589\u2013593 (2013).\n- 49. Popovici, D., Nagai, H., Fujishima, S. & Akedo, J. Preparation of lithium aluminum titanium phosphate electrolytes thick flms by aerosol deposition method. *J. Am. Ceram. Soc.* **94**, 3847\u20133850 (2011).\n- <span id=\"page-11-3\"></span>50. Inada, R. et al. Properties of aerosol deposited NASICON-type Li1.5Al0.5Ge1.5(PO4)3 solid electrolyte thin flms. *Ceram. Int.* [https://doi.](https://doi.org/10.1016/j.ceramint.2015.05.062) [org/10.1016/j.ceramint.2015.05.062](https://doi.org/10.1016/j.ceramint.2015.05.062) (2015).\n- <span id=\"page-11-19\"></span>51. Ling, Q. et al. Preparation and electrical properties of amorphous Li-Al-Ti-P-O thin flm electrolyte. *Mater. Lett.* **169**, 42\u201345 (2016).\n- <span id=\"page-11-20\"></span>52. Tan, G., Wu, F., Li, L., Liu, Y. & Chen, R. Magnetron sputtering preparation of nitrogen-incorporated lithium-aluminum-titanium phosphate based thin flm electrolytes for all-solid-state lithium ion batteries. *J. Phys. Chem. C* **116**, 3817\u20133826 (2012).\n- <span id=\"page-11-21\"></span>53. Chen, H., Tao, H., Zhao, X. & Wu, Q. Fabrication and ionic conductivity of amorphous Li-Al-Ti-P-O thin flm. *J. Non Cryst. Solids* **357**, 3267\u20133271 (2011).\n- <span id=\"page-11-22\"></span>54. Akedo, J. Room temperature impact consolidation (RTIC) of fne ceramic powder by aerosol deposition method and applications to microdevices. *J. Term. Spray. Technol.* **17**, 181\u2013198 (2008).\n- <span id=\"page-11-23\"></span>55. Kim, H. S. et al. Characterization of sputter-deposited LiCoO2 thin flm grown on NASICON-type electrolyte for application in all-solid-state rechargeable lithium battery. *ACS Appl. Mater. Interfaces* **9**, 16063\u201316070 (2017).\n- <span id=\"page-11-28\"></span>56. Stramare, S., Tangadurai, V. & Weppner, W. Lithium lanthanum titanates: a review. *Chem. Mater.* **15**, 3974\u20133990 (2003).\n- <span id=\"page-11-29\"></span>57. Kitaoka, K., Kozuka, H., Hashimoto, T. & Yoko, T. Preparation of La0.5Li0.5TiO3 perovskite thin flms by the sol\u2013gel method. *J. Mater. Sci.* **32**, 2063\u20132070 (1997).\n- <span id=\"page-11-24\"></span>58. Inaguma, Y. et al. High ionic conductivity in lithium lanthanum titanate. *Solid State Commun.* **86**, 689\u2013693 (1993).\n\n- <span id=\"page-11-30\"></span>59. Takada, K. Progress and prospective of solid-state lithium batteries. *Acta Mater.* **61**, 759\u2013770 (2013).\n- 60. Garcia-Martin, S., Amador, U., Morata-Orrantia, A., Rodriguez-Carvajal, J. & Alario-Franco, M. A. A. Structure, microstructure, composition and properties of lanthanum lithium titanates and some substituted analogues. *Z. Anorg. Allg. Chem.* **635**, 2363\u20132373 (2009).\n- 61. Mei, A. et al. Role of amorphous boundary layer in enhancing ionic conductivity of lithium-lanthanum-titanate electrolyte. *Electrochim. Acta* **55**, 2958\u20132963 (2010).\n- <span id=\"page-11-31\"></span>62. Bohnke, O., Emery, J. & Fourquet, J. L. L. Anomalies in Li+ ion dynamics observed by impedance spectroscopy and Li-7 NMR in the perovskite fast ion conductor (Li3*x*La2/3\u2212*x* square(1/3\u22122*x*))TiO3. *Solid State Ion.* **158**, 119\u2013132 (2003).\n- <span id=\"page-11-1\"></span>63. Kwon, W. J. J. et al. Enhanced Li+ conduction in perovskite Li3*x*La2/3\u2212*x* square 1/3*\u2212*2*x*TiO3 solid-electrolytes via microstructural engineering. *J. Mater. Chem. A* **5**, 6257\u20136262 (2017).\n- 64. Aguesse, F. et al. Microstructure and ionic conductivity of LLTO thin flms: infuence of diferent substrates and excess lithium in the target. *Solid State Ion.* **272**, 1\u20138 (2015).\n- <span id=\"page-11-32\"></span>65. Ma, C. et al. Atomic-scale origin of the large grain-boundary resistance in perovskite Li-ion-conducting solid electrolytes. *Energy Environ. Sci.* **7**, 1638\u20131642 (2014).\n- <span id=\"page-11-33\"></span>66. Li, C. L., Zhang, B. & Fu, Z. W. Physical and electrochemical characterization of amorphous lithium lanthanum titanate solid electrolyte thin-flm fabricated by e-beam evaporation. *Tin Solid Films* **515**, 1886\u20131892 (2006).\n- <span id=\"page-11-34\"></span>67. Kim, S. et al. Low temperature synthesis and ionic conductivity of the epitaxial Li0.17La0.61TiO3 flm electrolyte. *CrystEngComm* **16**, 1044\u20131049 (2014).\n- <span id=\"page-11-25\"></span>68. Furusawa, S., Tabuchi, H., Sugiyama, T., Tao, S. W. & Irvine, J. T. S. Ionic conductivity of amorphous lithium lanthanum titanate thin flm. *Solid State Ion.* **176**, 553\u2013558 (2005).\n- 69. Ahn, J.-K. K. & Yoon, S.-G. G. Characteristics of amorphous lithium lanthanum titanate electrolyte thin flms grown by PLD for use in rechargeable lithium microbatteries. *Electrochem. Solid State Lett.* **8**, A75 (2005).\n- 70. Ohnishi, T. & Takada, K. Synthesis and orientation control of Li-ion conducting epitaxial Li0.33La0.56TiO3 solid electrolyte thin flms by pulsed laser deposition. *Solid State Ion.* **228**, 80\u201382 (2012).\n- <span id=\"page-11-4\"></span>71. Lee, J. Z., Wang, Z., Xin, H. L., Wynn, T. A. & Meng, Y. S. Amorphous lithium lanthanum titanate for solid-state microbatteries. *J. Electrochem. Soc.* **164**, A6268\u2013A6273 (2017).\n- <span id=\"page-11-35\"></span>72. Ulusoy, S., Gulen, S., Aygun, G., Ozyuzer, L. & Ozdemir, M. Characterization of thin flm Li0.5La0.5Ti1\u2212*<sup>x</sup>*AlxO3 electrolyte for all-solid-state Li-ion batteries. *Solid State Ion.* **324**, 226\u2013232 (2018).\n- <span id=\"page-11-36\"></span>73. Yuli, X. et al. Efects of annealing temperature on structure and opt-electric properties of ion-conducting LLTO thin flms prepared by RF magnetron sputtering. *J. Alloy. Compd.* **509**, 1910\u20131914 (2011).\n- <span id=\"page-11-37\"></span>74. Aaltonen, T., Alnes, M., Nilsen, O., Costelle, L. & Fjellvag, H. Lanthanum titanate and lithium lanthanum titanate thin flms grown by atomic layer deposition. *J. Mater. Chem.* **20**, 2877\u20132881 (2010).\n- <span id=\"page-11-38\"></span>75. Zheng, Z. F. F., Song, S. D. D. & Wang, Y. Sol-gel-processed amorphous lithium ion electrolyte thin flms: structural evolution, theoretical considerations, and ion transport processes. *Solid State Ion.* **287**, 60\u201370 (2016).\n- <span id=\"page-11-27\"></span>76. Teranishi, T., Ishii, Y., Hayashi, H. & Kishimoto, A. Lithium ion conductivity of oriented Li0.33La0.56TiO3 solid electrolyte flms prepared by a sol-gel process. *Solid State Ion.* **284**, 1\u20136 (2016).\n- <span id=\"page-11-39\"></span>77. Le, H. T. T., Ngo, D. T., Kim, Y.-J., Park, C.-N. & Park, C.-J. A perovskite-structured aluminium-substituted lithium lanthanum titanate as a potential artifcial solid-electrolyte interface for aqueous rechargeable lithium-metal-based batteries. *Electrochim. Acta* **248**, 232\u2013242 (2017).\n- <span id=\"page-11-40\"></span>78. Tangadurai, V. & Weppner, W. Li6ALa2Ta2O12 (A=Sr, Ba): Novel garnet-like oxides for fast lithium ion conduction. *Adv. Funct. Mater.* **15**, 107\u2013112 (2005).\n- <span id=\"page-11-41\"></span>79. Bernuy-Lopez, C. et al. Atmosphere controlled processing of Gasubstituted garnets for high Li-ion conductivity ceramics. *Chem. Mater.* **26**, 3610\u20133617 (2014).\n- <span id=\"page-11-2\"></span>80. Wu, J. F. et al. Gallium-doped Li7La3Zr2O12 garnet-type electrolytes with high lithium-ion conductivity. *ACS Appl. Mater. Interfaces* **9**, 1542\u20131552 (2017).\n- <span id=\"page-11-26\"></span>81. Murugan, R., Tangadurai, V. & Weppner, W. Fast lithium Ion conduction in garnet-type Li7La3Zr2O12. *Angew. Chem. Int. Ed.* **46**, 7778\u20137781 (2007).\n- <span id=\"page-11-42\"></span>82. Tenhaef, W. E. et al. Resolving the grain boundary and lattice impedance of hot\u2010pressed Li7La3Zr2O12 garnet electrolytes. *ChemElectroChem* **1**, 375\u2013378 (2014).\n- <span id=\"page-11-43\"></span>83. Knauth, P. & Tuller, H. L. Solid-state ionics: roots, status, and future prospects. *J. Am. Ceram. Soc.* **85**, 1654\u20131680 (2002).\n- <span id=\"page-11-44\"></span>84. Rawlence, M. et al. Efect of gallium substitution on lithium-ion conductivity and phase evolution in sputtered Li7\u22123*<sup>x</sup>*GaxLa3Zr2O12 Tin Films. *ACS Appl. Mater. Interfaces* **10**, 13720\u201313728 (2018).\n- <span id=\"page-11-45\"></span>85. Rawlence, M., Garbayo, I., Buecheler, S. & Rupp, J. L. M. On the chemical stability of post-lithiated garnet Al-stabilized Li7La3Zr2O12 solid state electrolyte thin flms. *Nanoscale* **8**, 14746\u201314753 (2016).\n\n- <span id=\"page-12-5\"></span>86. Garbayo, I. et al. Glass-type polyamorphism in Li-garnet thin flm solid state battery conductors. *Adv. Energy Mater.* **8**, 1702265 (2018).\n- <span id=\"page-12-9\"></span>87. Katsui, H. & Goto, T. Preparation of cubic and tetragonal Li7La3Zr2O12 flm by metal organic chemical vapor deposition. *Tin Solid Films* **584**, 130\u2013134 (2015).\n- <span id=\"page-12-2\"></span>88. Bitzer, M., Van Gestel, T., Uhlenbruck, S. & Hans Peter, B. Sol\u2013gel synthesis of thin solid Li7La3Zr2O12 electrolyte flms for Li-ion batteries. *Tin Solid Films* **615**, 128\u2013134 (2016).\n- <span id=\"page-12-10\"></span>89. Kazyak, E. et al. Atomic layer deposition of the solid electrolyte garnet Li7La3Zr2O12. *Chem. Mater.* **29**, 3785\u20133792 (2017).\n- <span id=\"page-12-11\"></span>90. Wachtel, E. & Lubomirsky, I. Quasi-amorphous inorganic thin flms: non-crystalline polar phases. *Adv. Mater.* **22**, 2485\u20132493 (2010).\n- 91. Tan, J. J. & Tiwari, A. Fabrication and characterization of Li7La3Zr2O12 thin flms for lithium ion battery. *ECS Solid State Lett.* **1**, Q57\u2013Q60 (2012).\n- 92. Shimonishi, Y. et al. Synthesis of garnet-type Li7\u2212*<sup>x</sup>*La3Zr2O12\u22121/2*<sup>x</sup>* and its stability in aqueous solutions. *Solid State Ion.* **183**, 48\u201353 (2011).\n- 93. Nong, J., Xu, H., Yu, Z., Zhu, G. & Yu, A. Properties and preparation of Li-La-Ti-Zr-O thin flm electrolyte. *Mater. Lett.* **154**, 167\u2013169 (2015).\n- 94. Kalita, D. J., Lee, S. H., Lee, K. S., Ko, D. H. & Yoon, Y. S. Ionic conductivity properties of amorphous Li\u2013La\u2013Zr\u2013O solid electrolyte for thin flm batteries. *Solid State Ion.* **229**, 14\u201319 (2012).\n- <span id=\"page-12-12\"></span>95. Kim, S., Hirayama, M., Taminato, S. & Kanno, R. Epitaxial growth and lithium ion conductivity of lithium-oxide garnet for an all solid-state battery electrolyte. *Dalton Trans.* **42**, 13112\u201313117 (2013).\n- <span id=\"page-12-4\"></span>96. Pfenninger, R., Struzik, M., Garbayo, I. I., Stilp, E. & Rupp, J. L. M. A low ride on processing temperature for a fast Li conduction in garnet solid state battery flms. *Nat. Energy* **4**, 475\u2013483 (2019).\n- <span id=\"page-12-13\"></span>97. Rettenwander, D. One step closer to realizing solid-state batteries with cubic Li7La3Zr2O12 garnets. *Chem* **5**, 1695\u20131696 (2019).\n- <span id=\"page-12-14\"></span>98. Rupp, J. L. M., Struzik, M., Nenning, A., Garbayo, I. & Pfenninger, R. M. Methods of fabricating thin flms comprising lithium-containing materials. US patent 62/718,842 (2018).\n- <span id=\"page-12-7\"></span>99. Sastre, J. et al. Lithium garnet Li7La3Zr2O12 electrolyte for all\u2010solid\u2010state batteries: closing the gap between bulk and thin flm Li\u2010ion conductivities. *Adv. Mater. Interfaces* **7**, 2000425 (2020).\n- <span id=\"page-12-15\"></span>100. Chen, R.-J. et al. Sol\u2013gel derived Li\u2013La\u2013Zr\u2013O thin flms as solid electrolytes for lithium-ion batteries. *J. Mater. Chem. A* **2**, 13277\u201313282 (2014).\n- <span id=\"page-12-3\"></span>101. Tadanaga, K. et al. Preparation of lithium ion conductive Al-doped Li7La3Zr2O12 thin flms by a sol\u2013gel process. *J. Power Sources* **273**, 844\u2013847 (2015).\n- <span id=\"page-12-16\"></span>102. Zhu, Y., Hood, Z.D. Miara, L. & Rupp, J.L.M. Solution-processed solid-state electrolyte and method of manufacture thereof. US patent 62/713,428 (2018).\n- <span id=\"page-12-17\"></span>103. Zhu, Y., Hood, Z.D. Miara, L. & Rupp, J.L.M. Solid-state electrolyte and method of manufacture thereof. US patent 62/713,366 (2018).\n- <span id=\"page-12-18\"></span>104. Afyon, S., Krumeich, F. & Rupp, J. L. M. A shortcut to garnet-type fast Li-ion conductors for all-solid state batteries. *J. Mater. Chem. A* **3**, 18636\u201318648 (2015).\n- <span id=\"page-12-19\"></span>105. Wang, X. R. & Yushin, G. Chemical vapor deposition and atomic layer deposition for advanced lithium ion batteries and supercapacitors. *Energy Environ. Sci.* **8**, 1889\u20131904 (2015).\n\n- <span id=\"page-12-20\"></span>106. Pearse, A. et al. Tree-dimensional solid-state lithium-ion batteries fabricated by conformal vapor-phase chemistry. *ACS Nano* **12**, 4286\u20134294 (2018).\n- <span id=\"page-12-21\"></span>107. Letiche, M. et al. Atomic layer deposition of functional layers for on chip 3D Li-ion all solid state microbattery. *Adv. Energy Mater.* **7**, 1601402 (2017).\n- <span id=\"page-12-22\"></span>108. Castro-Garcia, S., Castro-Couceiro, A., Senaris-Rodriguez, M. A., Soulette, F. & Julien, C. Infuence of aluminum doping on the properties of LiCoO2 and LiNi0.5Co0.5O2 oxides. *Solid State Ion.* **156**, 15\u201326 (2003).\n- <span id=\"page-12-23\"></span>109. Li, Y., Cao, Y. & Guo, X. Infuence of lithium oxide additives on densifcation and ionic conductivity of garnet-type Li6.75La3Zr1.75Ta0.25O12 solid electrolytes. *Solid State Ion.* **253**, 76\u201380 (2013).\n- <span id=\"page-12-0\"></span>110. Hitz, G. T. et al. High-rate lithium cycling in a scalable trilayer Li-garnet-electrolyte architecture. *Mater. Today* **22**, 50\u201357 (2019).\n- <span id=\"page-12-1\"></span>111. Yi, E. et al. All-solid-state batteries using rationally designed garnet electrolyte frameworks. *ACS Appl. Energy Mater.* **3**, 170\u2013175 (2020).\n- 112. McOwen, D. W. et al. 3D-printing electrolytes for solid-state batteries. *Adv. Mater.* **30**, 1707132 (2018).\n- <span id=\"page-12-24\"></span>113. Yang, C. et al. Continuous plating/stripping behavior of solid-state lithium metal anode in a 3D ion-conductive framework. *Proc. Natl Acad. Sci. USA* **115**, 3770\u20133775 (2018).\n- <span id=\"page-12-6\"></span>114. Zhu, Y. et al. Solid state lithionics: lithium flm ceramics towards future functionalities. *Nat. Rev. Mater*. <https://doi.org/10.1038/s41578-020-00261-0> (2020).\n- <span id=\"page-12-8\"></span>115. Zhu, Y., He, X. & Mo, Y. Origin of outstanding stability in the lithium solid electrolyte materials: insights from thermodynamic analyses based on frstprinciples calculations. *ACS Appl. Mater. Interfaces* **7**, 23685\u201323693 (2015).\n\n## **Acknowledgements**\n\nResearchers were supported in parts by Samsung Electronics, NGK Inc., the Swiss National Science Foundation (grant number BSSGI0\\_155986) and the National Science Foundation MRSEC Program (grant number DMR-1419807). M.B. acknowledges financial support from the US-Israel Fulbright Program, the Zuckerman Israeli Postdoctoral Scholar Program and the MIT-Technion Postdoctoral Fellowship. Y.Z. acknowledges financial support from the ExxonMobil-MIT Energy Initiative Fellowship. J.L.M.R. thanks the Thomas Lord Foundation for financial support.\n\n## **Competing interests**\n\nThe authors declare no competing interests.\n\n## **Additional information**\n\n**Correspondence** should be addressed to J.L.M.R.\n\n**Peer review information** *Nature Energy* thanks Kiyoshi Kanamura, Richard Schmuch and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.\n\n**Reprints and permissions information** is available at [www.nature.com/reprints](http://www.nature.com/reprints).\n\n**Publisher's note** Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.\n\n\u00a9 Springer Nature Limited 2021",
+    "extraction": {
+        "conductivity_data": [
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'LiPON' subsection",
+                "material_description": "Amorphous LiPON thin film, fabricated by RF magnetron sputtering",
+                "processing_method": "RF magnetron sputtering with Li3PO4 targets under nitrogen or ammonia atmosphere"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "7.0E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'NASICONs' subsection",
+                "material_description": "N/A (Cited Work)",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'NASICONs' subsection",
+                "material_description": "LATP pellet",
+                "processing_method": "N/A (Cited Work - sol\u2013gel route and field-assisted sintering)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Polycrystalline Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.1E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'NASICONs' subsection",
+                "material_description": "Polycrystalline LATP thin film",
+                "processing_method": "Aerosol deposition"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Polycrystalline Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 2.7E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'NASICONs' subsection",
+                "material_description": "Polycrystalline LATP thin film",
+                "processing_method": "Aerosol deposition"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Aluminum Titanium Phosphate",
+                    "acronym": "a-LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "2.46E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'NASICONs' subsection",
+                "material_description": "Purely amorphous LATP film, denser and more uniform microstructure",
+                "processing_method": "RF magnetron sputtering"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Titanate",
+                    "acronym": "LLTO",
+                    "proportion": "Li_0.34La_0.56TiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Perovskites' subsection",
+                "material_description": "Polycrystalline LLTO pellet (x=0.1)",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Titanate",
+                    "acronym": "LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Perovskites' subsection",
+                "material_description": "Polycrystalline LLTO pellet",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Titanate",
+                    "acronym": "LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "4.8E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Perovskites' subsection",
+                "material_description": "LLTO ceramic pellet with excess Li at the grain boundary",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Lanthanum Titanate",
+                    "acronym": "a-LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "8.7E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Perovskites' subsection",
+                "material_description": "Grain-boundary-free a-LLTO film",
+                "processing_method": "PLD"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Polycrystalline Lithium Lanthanum Titanate",
+                    "acronym": "c-LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "4.42E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Perovskites' subsection",
+                "material_description": "Sol-gel-coated polycrystalline LLTO film, post-annealed at 1100 \u00b0C",
+                "processing_method": "Sol-gel coating, followed by post-annealing at 1100 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Niobate Oxide",
+                    "acronym": "Li_5La_3Nb_2O_12",
+                    "proportion": "Li_5La_3X_2O_12 where X=Nb or Ta"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Garnets' subsection",
+                "material_description": "Garnet-type oxide",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Tantalum Oxide",
+                    "acronym": "Li_5La_3Ta_2O_12",
+                    "proportion": "Li_5La_3X_2O_12 where X=Nb or Ta"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Garnets' subsection",
+                "material_description": "Garnet-type oxide",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Garnets' subsection",
+                "material_description": "Cubic-phase LLZO",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Garnets' subsection",
+                "material_description": "LLZO thin film, vacuum-deposited",
+                "processing_method": "Vacuum-based techniques (multilayer deposition with two ceramic pellet targets and post-annealing)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Garnets' subsection",
+                "material_description": "LLZO thin film, vacuum-deposited",
+                "processing_method": "Vacuum-based techniques (multilayer deposition with two ceramic pellet targets and post-annealing)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Cubic Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "c-LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "2.4E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Main text, 'Garnets' subsection",
+                "material_description": "Wet-chemically deposited cubic LLZO film",
+                "processing_method": "Wet-chemical deposition (sol\u2013gel process)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, thin film bar",
+                "material_description": "Amorphous LiPON thin film",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, pellet bar",
+                "material_description": "Amorphous LiPON pellet",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 3.0E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, thin film bar",
+                "material_description": "LATP thin film",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, pellet bar",
+                "material_description": "LATP pellet",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Titanate",
+                    "acronym": "LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 8.0E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, thin film bar",
+                "material_description": "LLTO thin film",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Titanate",
+                    "acronym": "LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 4.0E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, pellet bar",
+                "material_description": "LLTO pellet",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 3.0E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, thin film bar",
+                "material_description": "LLZO thin film",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, pellet bar",
+                "material_description": "LLZO pellet",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Other",
+                "electrolyte_name": {
+                    "full_name": "Ethylene Carbonate:Propylene Carbonate:Lithium Hexafluorophosphate",
+                    "acronym": "EC:PC:LiPF6",
+                    "proportion": "N/A"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-2",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 3c, liquid electrolyte benchmark",
+                "material_description": "State-of-the-art liquid electrolyte",
+                "processing_method": "N/A (Cited Work)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Phosphorus Oxynitride",
+                    "acronym": "LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4a, pellet conductivity (grey dashed line)",
+                "material_description": "LiPON pellet",
+                "processing_method": "N/A (general reference for pellet)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4a, plot digitization (Sputtering, a-LiPON)",
+                "material_description": "a-LiPON thin film",
+                "processing_method": "Sputtering"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 3.0E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4a, plot digitization (PLD, a-LiPON)",
+                "material_description": "a-LiPON thin film",
+                "processing_method": "PLD"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.5E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4a, plot digitization (CVD, a-LiPON)",
+                "material_description": "a-LiPON thin film",
+                "processing_method": "CVD"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Phosphorus Oxynitride",
+                    "acronym": "a-LiPON",
+                    "proportion": "Li_xPO_yN_z"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.5E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4a, plot digitization (Sol-gel, a-LiPON)",
+                "material_description": "a-LiPON thin film",
+                "processing_method": "Sol-gel"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Aluminum Titanium Phosphate",
+                    "acronym": "LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4b, pellet conductivity (grey dashed line)",
+                "material_description": "LATP pellet",
+                "processing_method": "N/A (general reference for pellet)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Aluminum Titanium Phosphate",
+                    "acronym": "a-LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 2.5E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4b, plot digitization (Sputtering, a-LATP)",
+                "material_description": "a-LATP thin film",
+                "processing_method": "Sputtering, annealing at 250 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Aluminum Titanium Phosphate",
+                    "acronym": "c-LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 2.5E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4b, plot digitization (AD, c-LATP)",
+                "material_description": "c-LATP thin film",
+                "processing_method": "Aerosol Deposition (AD), deposition at 25 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Aluminum Titanium Phosphate",
+                    "acronym": "c-LATP",
+                    "proportion": "Li(Al,Ti)_2(PO_4)_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4b, plot digitization (Sol-gel, c-LATP)",
+                "material_description": "c-LATP thin film",
+                "processing_method": "Sol-gel, annealing at 600 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Titanate",
+                    "acronym": "LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 5.0E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4c, pellet conductivity (grey dashed line)",
+                "material_description": "LLTO pellet",
+                "processing_method": "N/A (general reference for pellet)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Lanthanum Titanate",
+                    "acronym": "a-LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 8.7E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4c, plot digitization (PLD, a-LLTO)",
+                "material_description": "a-LLTO thin film",
+                "processing_method": "PLD, deposition at 25 \u00b0C, annealing at 600 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Lanthanum Titanate",
+                    "acronym": "c-LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 4.4E-5",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4c, plot digitization (Sol-gel, c-LLTO)",
+                "material_description": "c-LLTO thin film",
+                "processing_method": "Sol-gel, annealing at 1100 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Lanthanum Titanate",
+                    "acronym": "a-LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.5E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4c, plot digitization (E-beam, a-LLTO)",
+                "material_description": "a-LLTO thin film",
+                "processing_method": "E-beam evaporation, deposition at 25 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Lanthanum Titanate",
+                    "acronym": "a-LLTO",
+                    "proportion": "Li_xLa_yTiO_3"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 5.0E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4c, plot digitization (Sputtering, a-LLTO)",
+                "material_description": "a-LLTO thin film",
+                "processing_method": "Sputtering, deposition at 25 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "1.0E-3",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4d, pellet conductivity (grey dashed line)",
+                "material_description": "LLZO pellet",
+                "processing_method": "N/A (general reference for pellet)"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "c-LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-4",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4d, plot digitization (PLD (multilayer), c-LLZO)",
+                "material_description": "c-LLZO thin film",
+                "processing_method": "PLD (multilayer deposition), deposition at 400 \u00b0C, annealing at 700 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Amorphous Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "a-LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 5.0E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4d, plot digitization (PLD, a-LLZO)",
+                "material_description": "a-LLZO thin film",
+                "processing_method": "PLD, deposition at 300 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "c-LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 2.4E-6",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4d, plot digitization (Sol-gel, c-LLZO)",
+                "material_description": "c-LLZO thin film",
+                "processing_method": "Sol-gel, annealing at 700 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "c-LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0E-7",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4d, plot digitization (ALD, c-LLZO)",
+                "material_description": "c-LLZO thin film",
+                "processing_method": "ALD, deposition at 250 \u00b0C"
+            },
+            {
+                "material_class": "Ceramic",
+                "electrolyte_name": {
+                    "full_name": "Crystalline Lithium Lanthanum Zirconate Oxide",
+                    "acronym": "c-LLZO",
+                    "proportion": "Li_7La_3Zr_2O_12"
+                },
+                "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 5.0E-8",
+                "measurement_temperature": "RT",
+                "specific_source_location": "Figure 4d, plot digitization (Sputtering, c-LLZO)",
+                "material_description": "c-LLZO thin film",
+                "processing_method": "Sputtering, deposition at 500 \u00b0C"
+            }
+        ]
+    },
+    "figure_extraction": [
+        {
+            "figure": "_page_0_Figure_3.jpeg",
+            "success": true,
+            "figure_type": "not_relevant",
+            "contains_data": false,
+            "data_points_count": 0,
+            "analysis": {
+                "figure_type": "not_relevant",
+                "contains_conductivity_data": false,
+                "figure_description": "The image displays a 'Check for updates' button, which is a standard user interface element found on online journal article webpages.",
+                "key_message": "Not applicable. This is not a scientific figure but a web element from the publisher's site.",
+                "trends_observations": "Not applicable.",
+                "conductivity_data": [],
+                "comments": "The image is a component of a webpage's user interface, not a figure from the scientific publication itself. It contains no scientific data or information relevant to materials science analysis."
+            },
+            "error": null
+        },
+        {
+            "figure": "_page_1_Figure_2.jpeg",
+            "success": true,
+            "figure_type": "other",
+            "contains_data": false,
+            "data_points_count": 0,
+            "analysis": {
+                "figure_type": "other",
+                "contains_conductivity_data": false,
+                "figure_description": "A composite figure containing three panels: (a) a schematic of a solid-state battery architecture, (b) a cost analysis including a pie chart of component cost distribution and bar charts comparing current and target costs for solid electrolytes, and (c) a chart comparing the thickness ranges of different solid electrolyte materials based on various fabrication methods.",
+                "key_message": "The figure emphasizes that achieving commercially viable solid-state batteries requires significant reduction in both the cost and thickness of the solid electrolyte layer, highlighting the need for advanced thin-film fabrication techniques to replace thick pellets.",
+                "trends_observations": "The cost analysis in panel (b) indicates that the solid electrolyte is a major cost component. Panel (c) clearly shows a trend where fabrication methods dictate electrolyte thickness: conventional pellets are thick (300 \u00b5m\u20131 mm), while advanced vacuum-based and wet-chemical techniques can produce thin films on the order of nanometers to a few micrometers, approaching the ideal thickness target of <20 \u00b5m.",
+                "conductivity_data": [],
+                "comments": "This figure is highly relevant to solid-state electrolytes but focuses exclusively on economic (cost) and physical (thickness) aspects rather than electrochemical performance. No ionic conductivity data is presented, and therefore, none could be extracted."
+            },
+            "error": null
+        },
+        {
+            "figure": "_page_4_Figure_2.jpeg",
+            "success": true,
+            "figure_type": "data_plot",
+            "contains_data": false,
+            "data_points_count": 0,
+            "analysis": {
+                "figure_type": "data_plot",
+                "contains_conductivity_data": false,
+                "figure_description": "The figure illustrates different solid electrolyte (SE)/cathode composite structures and compares the required processing temperatures. Part (a) is a schematic showing high-temperature co-sintered structures versus lower-temperature designs. Part (b) is a bar chart comparing the sinter/co-sinter temperatures for single solid electrolytes (LATP, LLZO, LLTO) and various composite cathode/electrolyte tandems.",
+                "key_message": "The figure highlights the high processing temperatures (>1000\u00b0C) required for sintering common oxide solid electrolytes, and the challenge of co-sintering them with cathode materials, which often necessitates lower, yet still challenging, temperatures to maintain chemical stability at the interface.",
+                "trends_observations": "Single oxide electrolytes such as LATP, LLZO, and LLTO require sintering temperatures near or above 1200\u00b0C. Co-sintering these electrolytes with various cathode materials (LMO, LCO, LNMO, LFP) is performed at lower temperatures, typically ranging from approximately 600\u00b0C to 900\u00b0C.",
+                "conductivity_data": [],
+                "comments": "This figure does not contain any ionic conductivity data. The y-axis in plot (b) represents processing temperature (\u00b0C), not ionic conductivity (S/cm). Therefore, no conductivity data could be extracted."
+            },
+            "error": null
+        },
+        {
+            "figure": "_page_5_Figure_4.jpeg",
+            "success": true,
+            "figure_type": "data_plot",
+            "contains_data": true,
+            "data_points_count": 19,
+            "analysis": {
+                "figure_type": "data_plot",
+                "contains_conductivity_data": true,
+                "figure_description": "Composite figure comparing different families of inorganic solid-state electrolytes. It includes (a) crystal structures, (b) a timeline of ionic conductivity milestones from 1990-2019 for various pellets and thin films, (c) Arrhenius plots comparing temperature-dependent ionic conductivity, (d) electrochemical stability windows, and (e) processing temperatures.",
+                "key_message": "The figure provides a comprehensive overview of key inorganic solid-state electrolytes, showing the historical progress in ionic conductivity and comparing the performance of different material classes (Garnet, Perovskite, NASICON, etc.) in both bulk (pellet) and thin-film forms. Thin-film amorphous materials like a-LLTO can achieve exceptionally high conductivities, surpassing even their crystalline pellet counterparts.",
+                "trends_observations": "Ionic conductivity generally increases with temperature for all solid electrolytes, following an Arrhenius relationship. The timeline shows a consistent improvement in conductivity for solid electrolytes over the past three decades. In several cases, thin-film electrolytes exhibit higher ionic conductivity than their bulk pellet counterparts. The benchmark liquid electrolyte (EC:PC:LiPF6) still shows superior room-temperature conductivity compared to the solid electrolytes presented.",
+                "conductivity_data": [
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Aluminum Titanium Phosphate",
+                            "acronym": "LATP",
+                            "proportion": "Li(Al,Ti)x(PO4)3"
+                        },
+                        "ionic_conductivity_S_per_cm": "7e-4",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 1990",
+                        "material_description": "LATP pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Phosphorus Oxynitride",
+                            "acronym": "LiPON",
+                            "proportion": "LixPOyNz"
+                        },
+                        "ionic_conductivity_S_per_cm": "2e-6",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 1992",
+                        "material_description": "LiPON film (1 \u00b5m)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Lanthanum Titanate",
+                            "acronym": "LLTO",
+                            "proportion": "LixLa(2/3-x/3)TiO3"
+                        },
+                        "ionic_conductivity_S_per_cm": "7e-5",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 1993",
+                        "material_description": "LLTO pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Phosphorus Oxynitride",
+                            "acronym": "LiPON",
+                            "proportion": "LixPOyNz"
+                        },
+                        "ionic_conductivity_S_per_cm": "3e-7",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 1995",
+                        "material_description": "LiPON pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Amorphous Lithium Lanthanum Titanate",
+                            "acronym": "a-LLTO",
+                            "proportion": "LixLa(2/3-x/3)TiO3"
+                        },
+                        "ionic_conductivity_S_per_cm": "8.75e-4",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2005",
+                        "material_description": "a-LLTO film (640 nm)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Lanthanum Zirconate",
+                            "acronym": "LLZO",
+                            "proportion": "Li7La3Zr2O12"
+                        },
+                        "ionic_conductivity_S_per_cm": "3e-4",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2007",
+                        "material_description": "LLZO pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Amorphous Lithium Aluminum Titanium Phosphate",
+                            "acronym": "a-LATP",
+                            "proportion": "Li(Al,Ti)x(PO4)3"
+                        },
+                        "ionic_conductivity_S_per_cm": "2.46e-6",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2011",
+                        "material_description": "a-LATP film (275 nm)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Crystalline Lithium Aluminum Titanium Phosphate",
+                            "acronym": "c-LATP",
+                            "proportion": "Li(Al,Ti)x(PO4)3"
+                        },
+                        "ionic_conductivity_S_per_cm": "2.7e-6",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2013",
+                        "material_description": "c-LATP film (1 \u00b5m)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Crystalline Lithium Lanthanum Titanate",
+                            "acronym": "c-LLTO",
+                            "proportion": "LixLa(2/3-x/3)TiO3"
+                        },
+                        "ionic_conductivity_S_per_cm": "4.42e-5",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2016",
+                        "material_description": "c-LLTO film (0.4 \u00b5m)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Crystalline Lithium Lanthanum Zirconate",
+                            "acronym": "c-LLZO",
+                            "proportion": "Li7La3Zr2O12"
+                        },
+                        "ionic_conductivity_S_per_cm": "2.9e-5",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2018",
+                        "material_description": "c-LLZO film (330 nm)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Amorphous Lithium Lanthanum Zirconate",
+                            "acronym": "a-LLZO",
+                            "proportion": "Li7La3Zr2O12"
+                        },
+                        "ionic_conductivity_S_per_cm": "2.39e-8",
+                        "measurement_temperature": "Not specified, assumed to be room temperature",
+                        "specific_source_location": "Figure 4b, timeline at year 2019",
+                        "material_description": "a-LLZO film (300 nm)",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Amorphous Lithium Lanthanum Titanate thin film",
+                            "acronym": "a-LLTO",
+                            "proportion": "Li0.45La0.46TiO3"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 7.9e-4",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, blue solid line at 1000/T=3.4",
+                        "material_description": "a-LLTO, thin film",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Gallium-doped Lithium Lanthanum Zirconate pellet",
+                            "acronym": "LLZO, pellet",
+                            "proportion": "Li0.25Ga0.25La0.50ZrO12"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.6e-4",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, red dotted line at 1000/T=3.4",
+                        "material_description": "LLZO, pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Lanthanum Titanate pellet",
+                            "acronym": "LLTO, pellet",
+                            "proportion": "Li0.25La0.60TiO3"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 2.5e-5",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, red dashed line at 1000/T=3.4",
+                        "material_description": "LLTO, pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Crystalline Gallium-doped Lithium Lanthanum Zirconate thin film",
+                            "acronym": "c-LLZO",
+                            "proportion": "Li0.51Ga0.32La0.22Zr2.25O13"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.6e-5",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, red solid line at 1000/T=3.4",
+                        "material_description": "c-LLZO, thin film",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Amorphous Lithium Aluminum Titanium Phosphate thin film",
+                            "acronym": "a-LATP",
+                            "proportion": "Li1.3Al0.4Ti1.7(PO4)3"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 4.0e-6",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, blue dashed line at 1000/T=3.4",
+                        "material_description": "a-LATP, thin film",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Amorphous Lithium Phosphorus Oxynitride thin film",
+                            "acronym": "a-LiPON",
+                            "proportion": "Li3.13PO1.89N1.39"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0e-6",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, orange dashed line at 1000/T=3.4",
+                        "material_description": "a-LiPON, thin film",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "Lithium Phosphorus Oxynitride pellet",
+                            "acronym": "LiPON, pellet",
+                            "proportion": "Li0.99PO2.55N0.30"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 5.0e-7",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, orange dotted line at 1000/T=3.4",
+                        "material_description": "LiPON, pellet",
+                        "processing_method": "Not specified"
+                    },
+                    {
+                        "material_class": "Other",
+                        "electrolyte_name": {
+                            "full_name": "Ethylene Carbonate:Propylene Carbonate:Lithium Hexafluorophosphate",
+                            "acronym": "EC:PC:LiPF6",
+                            "proportion": "Not specified"
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.0e-2",
+                        "measurement_temperature": "21\u00b0C (294K)",
+                        "specific_source_location": "Figure 4c, grey solid line at 1000/T=3.4",
+                        "material_description": "Liquid electrolyte",
+                        "processing_method": "Not applicable"
+                    }
+                ],
+                "comments": "The figure is information-dense, combining schematics, a timeline, and data plots. Ionic conductivity values from Figure 4b are taken as reported, but their measurement temperature is not specified. Values from Figure 4c are qualitative estimates read from a logarithmic Arrhenius plot. The LATP pellet line (blue dotted) in Figure 4c is barely visible and only plotted at very low temperatures, making room-temperature estimation impossible from the graph."
+            },
+            "error": null
+        },
+        {
+            "figure": "_page_6_Figure_2.jpeg",
+            "success": true,
+            "figure_type": "data_plot",
+            "contains_data": true,
+            "data_points_count": 7,
+            "analysis": {
+                "figure_type": "data_plot",
+                "contains_conductivity_data": true,
+                "figure_description": "The figure presents four Arrhenius plots (log ionic conductivity vs. inverse temperature) comparing various thin-film solid electrolytes: (a) LiPON, (b) LATP, (c) LLTO, and (d) LLZO. The plots differentiate between amorphous, crystalline, and epitaxial films prepared under different conditions, often referencing bulk pellet data for comparison.",
+                "key_message": "The ionic conductivity of thin-film solid electrolytes is highly dependent on the material system, crystallinity, and processing conditions, with certain LLTO and LLZO films showing the highest conductivities, approaching or exceeding 10^-4 S/cm at room temperature.",
+                "trends_observations": "Ionic conductivity increases with temperature (decreases with 1000/T) for all materials, consistent with Arrhenius behavior. There is significant variation (several orders of magnitude) in conductivity within each material class depending on the synthesis method and resulting microstructure (amorphous, crystalline, epitaxial). For LLZO, the conductivity of the benchmark bulk pellet is higher than most of the thin films shown. LLTO thin films exhibit the highest overall conductivities, reaching up to 10^-3 S/cm at room temperature.",
+                "conductivity_data": [
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "amorphous Lithium Phosphorus Oxynitride",
+                            "acronym": "a-LiPON",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1e-4",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2a, line b at 1000/T=3.35",
+                        "material_description": "Amorphous thin film, deposition temperature (Td) = 25 \u00b0C",
+                        "processing_method": "Not explicitly stated"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "amorphous Lithium Aluminum Titanium Phosphate",
+                            "acronym": "a-LATP",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 3.16e-5",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2b, line a at 1000/T=3.35",
+                        "material_description": "Amorphous thin film, deposition temperature (Td) = 300 \u00b0C",
+                        "processing_method": "Not explicitly stated"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "crystalline Lithium Aluminum Titanium Phosphate",
+                            "acronym": "c-LATP",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1.58e-5",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2b, line d at 1000/T=3.35",
+                        "material_description": "Crystalline thin film via rapid annealing, deposition temperature (Td) = 750 \u00b0C",
+                        "processing_method": "Pulsed laser deposition (inferred from red color)"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "amorphous Lithium Lanthanum Titanate",
+                            "acronym": "a-LLTO",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1e-3",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2c, line a at 1000/T=3.35",
+                        "material_description": "Amorphous thin film, deposition temperature (Td) = 25 \u00b0C",
+                        "processing_method": "Pulsed laser deposition (inferred from red color)"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "epitaxial Lithium Lanthanum Titanate",
+                            "acronym": "epi-LLTO",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 6.31e-4",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2c, line b at 1000/T=3.35",
+                        "material_description": "Epitaxial thin film, deposition temperature (Td) = 750 \u00b0C",
+                        "processing_method": "Not explicitly stated"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "crystalline Lithium Lanthanum Zirconate",
+                            "acronym": "c-LLZO",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 3.98e-4",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2d, line a at 1000/T=3.35",
+                        "material_description": "Crystalline bulk pellet, deposition temperature (Td) = 700 \u00b0C",
+                        "processing_method": "Sintering (implied by 'bulk pellet')"
+                    },
+                    {
+                        "material_class": "Ceramic",
+                        "electrolyte_name": {
+                            "full_name": "crystalline Lithium Lanthanum Zirconate",
+                            "acronym": "c-LLZO",
+                            "proportion": null
+                        },
+                        "ionic_conductivity_S_per_cm": "Value is a qualitative estimate: 1e-4",
+                        "measurement_temperature": "25\u00b0C (298.5K)",
+                        "specific_source_location": "Figure 2d, line b at 1000/T=3.35",
+                        "material_description": "Crystalline thin film, deposition temperature (Td) = 660 \u00b0C",
+                        "processing_method": "Pulsed laser deposition (inferred from red color)"
+                    }
+                ],
+                "comments": "All conductivity values are qualitatively estimated from a logarithmic y-axis and an inverse temperature x-axis. Room temperature is taken as 25\u00b0C (1000/T \u2248 3.35 K\u207b\u00b9). The figure is a literature compilation, citing numerous sources, which accounts for the wide spread in data for similar materials. The legend is highly detailed, combining information about material, morphology, and deposition temperature."
+            },
+            "error": null
+        },
+        {
+            "figure": "_page_8_Figure_2.jpeg",
+            "success": true,
+            "figure_type": "schematic",
+            "contains_data": false,
+            "data_points_count": 0,
+            "analysis": {
+                "figure_type": "schematic",
+                "contains_conductivity_data": false,
+                "figure_description": "A series of schematic diagrams illustrating the problem of lithium loss during thin-film deposition (a) and four distinct strategies to compensate for this loss in both physical vapor deposition (b, c, d) and solution-based (e) processing methods.",
+                "key_message": "The figure explains that lithium loss is a critical issue in fabricating thin-film solid electrolytes and presents various compensation strategies, such as using over-lithiated targets, co-deposition with a lithium source, multilayer deposition, or using lithium-rich precursor solutions, to achieve the desired stoichiometry.",
+                "trends_observations": "The figure qualitatively illustrates different technical approaches to solve a common material processing problem. Panel (e) visually represents a trend of increasing lithium salt concentration in precursor solutions for methods like sol-gel or spray pyrolysis.",
+                "conductivity_data": [],
+                "comments": "This figure is purely schematic and conceptual. It illustrates material processing strategies but does not contain any quantitative data, such as ionic conductivity values, that can be extracted."
+            },
+            "error": null
+        }
+    ]
+}

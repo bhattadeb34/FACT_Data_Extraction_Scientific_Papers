@@ -1,0 +1,71 @@
+Task: High-Precision, CONTEXT-PRESERVING Data Aggregation (JSON Output)
+
+You are an expert electrochemist. Your task is to aggregate ionic conductivity data 
+while PRESERVING critical distinctions that affect material performance.
+
+## CRITICAL RULE: Do NOT Over-Aggregate
+- A "group" should represent materials that are ACTUALLY comparable
+- Pellets and thin films are DIFFERENT groups (even if same chemistry)
+- Different processing methods that yield >1 order of magnitude difference = separate groups
+
+## Grouping Strategy (Multi-Level):
+
+### Primary Grouping: Crystal Family + Form Factor
+Format: "{Crystal Family}-{Form Factor}"
+
+Examples:
+- "Garnet-type Pellet"
+- "Garnet-type Thin Film" 
+- "NASICON-type Pellet"
+- "PEO-based Polymer"
+- "Other (Composite)"
+
+### Sub-grouping Rules:
+Within each primary group, distinguish by:
+1. **Processing method** if conductivity differs by >1 order of magnitude
+2. **Composition** if significantly different (e.g., LLZO vs Al-doped LLZO)
+3. **Phase** (amorphous vs crystalline)
+
+Example - LLZO should become MULTIPLE groups:
+- "Garnet-type LLZO Pellet (Sintered)"
+- "Garnet-type LLZO Thin Film (PLD)"
+- "Garnet-type LLZO Thin Film (Sol-gel)"
+- "Garnet-type LLZO Thin Film (Amorphous)"
+
+## Temperature Handling:
+- Do NOT mix RT and high-temp measurements in same range
+- If data spans multiple temps, note: "25°C (RT)" vs "80°C" separately
+- Format: "25°C" or "25-80°C range" (never use non-ASCII degree symbols)
+
+## Conductivity Range Rules:
+- If range >2 orders of magnitude, check if you over-aggregated
+- Include representative values: "1.0×10⁻³ S/cm (best), range: 10⁻⁴-10⁻³"
+- Note outliers: "Typical: 10⁻⁵, one report of 10⁻⁸ (anomalous)"
+
+## Processing Method Linkage:
+CRITICAL: Link processing to performance
+Format: "[Method]: [Conductivity achieved]"
+
+Example:
+"Sol-gel + field-assisted sintering: 1.0×10⁻³ S/cm (highest); 
+ Standard solid-state: 7×10⁻⁴ S/cm; 
+ Aerosol deposition: 1.1-2.7×10⁻⁶ S/cm (lower)"
+
+## Material Description Must Include:
+1. Form factor (pellet/film/tape)
+2. Phase (crystalline/amorphous)
+3. Key distinguishing feature (grain size, thickness, doping)
+4. Performance ranking if multiple entries
+
+Example:
+"Cubic phase LLZO pellets, sintered at 1100°C, grain size 5-10 μm. 
+ Highest reported RT conductivity for LLZO (~10⁻³ S/cm)"
+
+## Output Schema Clarification:
+
+grouping_key: Use format "{Family}-{Form}-{Method}" if needed for distinction
+Example: "Garnet-LLZO-Film-PLD" vs "Garnet-LLZO-Film-Solgel"
+
+consolidated_processing_method: 
+Link each method to its achieved conductivity
+Use format: "[Method A]: [Conductivity A]; [Method B]: [Conductivity B]"

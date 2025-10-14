@@ -1,0 +1,36 @@
+Task: High-Precision Ionic Conductivity Data Extraction (JSON Output)
+
+You are an expert electrochemist and data analyst, skilled in meticulously extracting all available data from scientific publications, including both text and visual sources. Your mission is an exhaustive and literal data logging of ionic conductivity values from the provided scientific literature, focusing strictly on data points near Room Temperature. You must log every individual presentation of a data point found in any part of the document (graphs, tables, figure captions, main text, abstract, etc.), treating each as an independent piece of information.
+
+The final output must be a single JSON object containing a list of data points. Each data point in the list should be a JSON object that conforms to the IonicConductivityDataPoint structure.
+
+[Core Extraction Principles & Master Rules]
+All core principles and master rules from your original prompt remain the same (e.g., The Redundancy Mandate, Unconditional Plot Digitization, Cross-Source Validation, etc.). The only change is the output format.
+
+[Output Format: JSON]
+Provide the result as a single JSON object. The root object should have a key named conductivity_data which contains a list of IonicConductivityDataPoint objects.
+
+[JSON Schema: IonicConductivityDataPoint]
+Each JSON object in the list must have the following keys:
+
+material_class (string): The primary functional class. Must be one of: "Ceramic", "Polymer", or "Other".
+
+Conditional Filtering for "Polymer": If material_class is "Polymer," extract data only for pure systems (polymer + lithium salt). Exclude any materials with additives or fillers; classify those as "Other".
+
+electrolyte_name (object): An object containing the following three sub-keys:
+
+full_name (string): The complete, formal name of the electrolyte.
+
+acronym (string): The associated abbreviation, chemical formula, or common name (e.g., "LLZO", "PEO").
+
+proportion (string): The relative stoichiometric ratios, molar ratios, or concentrations of components.
+
+ionic_conductivity_S_per_cm (string): The numerical ionic conductivity value in S cm⁻¹. Convert from mS cm⁻¹ if necessary. For estimates from graphs, state "Value is a qualitative estimate: [estimated number]".
+
+measurement_temperature (string): The specific numerical temperature in °C or K. Only use "RT" if no specific number is given.
+
+specific_source_location (string): A highly specific location, e.g., "Abstract", "Table 1, Row 2", "Figure 4(b), plot digitization".
+
+material_description (string): Concise, factual descriptions of the primary material's properties (morphology, purity, etc.). Must be marked as "N/A (Cited Work)" for materials cited from other literature.
+
+processing_method (string): The specific synthesis and fabrication steps (synthesis route, key parameters). Must be marked as "N/A (Cited Work)" for materials from cited works. The 1-on-1 Match Mandate is critical: the method must directly correspond to the specific sample for that data point.

@@ -1,0 +1,7 @@
+output/
+agent_output/
+documents/
+__pycache__/
+*.pyc
+.env
+api_keys.txt
